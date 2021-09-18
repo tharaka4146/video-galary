@@ -9,6 +9,10 @@
     <title>Blutube &#8211; Video Stream &amp; Blog WordPress Theme</title>
     <meta name='robots' content='max-image-preview:large' />
 
+    <link rel='stylesheet' href='css/bootstrap.css'>
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+
     <script src="/cdn-cgi/apps/head/Zb0fs0PElkQHlPhqff3Pl1fl2_A.js"></script>
 
     <link rel="alternate" type="application/rss+xml" title="Blutube &raquo; Feed"
@@ -68,9 +72,7 @@
     <link rel='stylesheet' id='elementor-global-css'
         href='https://blutube.themesawesome.com/wp-content/uploads/sites/162/elementor/css/global.css?ver=1628034060'
         type='text/css' media='all' />
-    <link rel='stylesheet' id='elementor-post-43-css'
-        href='https://blutube.themesawesome.com/wp-content/uploads/sites/162/elementor/css/post-43.css?ver=1628147098'
-        type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-post-43-css' href='css/post-43.css' type='text/css' media='all' />
 
     <style id="google-fonts-1-css" media="all">
         /* devanagari */
@@ -1984,6 +1986,32 @@
         }
     </style>
 
+    <style id="compiled-css" type="text/css">
+        .headerPopup {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .headerPopup iframe {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* EOS */
+    </style>
+
+    <!-- custom css -->
+    <style>
+        .elementor-43 .elementor-element.elementor-element-58eb7f9 .video-thumb .play-button-hover i,
+        .elementor-43 .elementor-element.elementor-element-58eb7f9 .style-5 .post-thumb .play-button-hover {
+            background-color: #ff0000b5;
+        }
+
+        .elementor-43 .elementor-element.elementor-element-e6f7a1c:not(.elementor-motion-effects-element-type-background),
+        .elementor-43 .elementor-element.elementor-element-e6f7a1c>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+            background-color: rgba(255, 255, 255, 0);
+        }
+    </style>
 
 </head>
 
@@ -1995,8 +2023,7 @@
             <div class="header-left text-left clearfix">
                 <div class="head-item logo-image logo-head">
                     <a href="https://blutube.themesawesome.com/">
-                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/05/logo-blutube-35.png"
-                            alt="Blutube" />
+                        <img src="img/logo.png" alt="Blutube" />
                     </a>
                 </div>
 
@@ -2006,10 +2033,11 @@
                     <span class="main-menu-btn-icon"></span>
                 </label>
                 <nav class="menu main-menu head-item">
-                    <div class="menu-mobile-add">
+                    <!-- <div class="menu-mobile-add">
                         <a href="https://blutube.themesawesome.com/myaccount">Upload</a>
-                    </div>
-                    <ul id="menu-menu-main-header" class="sm sm-clean">
+                    </div> -->
+                    <!-- <ul id="menu-menu-main-header" class="sm sm-clean">
+                        
                         <li id="menu-item-57"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-43 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-57">
                             <a href="https://blutube.themesawesome.com/" aria-current="page">Home</a>
@@ -2026,6 +2054,7 @@
                                         href="https://blutube.themesawesome.com/home-3/">Home Style 3</a></li>
                             </ul>
                         </li>
+
                         <li id="menu-item-541"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-541">
                             <a href="https://blutube.themesawesome.com/categories/">Videos</a>
@@ -2052,6 +2081,7 @@
                                         Video</a></li>
                             </ul>
                         </li>
+
                         <li id="menu-item-576"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-576"><a
                                 href="https://blutube.themesawesome.com/blog/">Blog</a></li>
@@ -2074,12 +2104,14 @@
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1542"><a
                                 href="https://themesawesome.zendesk.com/hc/en-us/categories/360006116491-Bluetube">Docs</a>
                         </li>
-                    </ul>
-                    <div class="menu-mobile-add">
-                    </div>
+                    </ul> -->
+
+                    <!-- <div class="menu-mobile-add">
+                    </div> -->
+
                 </nav>
             </div>
-            <div class="header-right text-right clearfix ">
+            <!-- <div class="header-right text-right clearfix ">
                 <div class="header-info-wrapper">
                     <div class="search-wrap head-info-item">
                         <form method="get" class="searchform" action="https://blutube.themesawesome.com/" role="search">
@@ -2097,7 +2129,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </header>
         <div data-elementor-type="wp-page" data-elementor-id="43" class="elementor elementor-43"
             data-elementor-settings="[]">
@@ -2115,148 +2147,237 @@
                                     <div class="elementor-widget-container">
                                         <div class="video-wrap style-3 ele rand-4430">
                                             <div class="swiper-container">
+
                                                 <div class="swiper-wrapper">
+
+                                                    <!-- Slide elements -->
                                                     <div class="video-item swiper-slide"
-                                                        style="background-image: url(https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/fl1c.jpg); background-size: cover;  min-height: 100vh;">
+                                                        style="background-image: url(img/slideshow/1.png); background-size: cover;  min-height: 100vh;">
+
+                                                        <!-- <video autoplay muted loop style="height: 150%; width: 150%; ">
+                                                            <source src="video.mp4" type="video/mp4">
+                                                        </video> -->
+
+                                                        <h1 id="welcome"
+                                                            style="text-align: center; position: relative; z-index: 999; margin-top: 200px; padding: 5%; font-size: 500%;">
+                                                            video galary name goes here</h1>
+
+
                                                         <div class="inner-img-video">
+
+
                                                             <div class="tag-wrapper meta-top">
-                                                                <a href="https://blutube.themesawesome.com/video-category/editor-choice/"
-                                                                    rel="tag">Editor Choice</a> <a
-                                                                    href="https://blutube.themesawesome.com/video-category/film/"
-                                                                    rel="tag">Film</a>
+                                                                <a class="headerVideoLink" href="#video1"
+                                                                    target="_blank" class="popup-modal">
+                                                                    Watch Now
+                                                                </a>
                                                             </div>
-                                                            <h1 class="video-title"><a
-                                                                    href="https://blutube.themesawesome.com/video/appointed-decorated-the-croissants-thought/">Appointed
-                                                                    decorated the croissants thought</a></h1>
+
+                                                            <h1 class="video-title">
+                                                                DevZone Session 01
+                                                            </h1>
+
                                                             <div class="excerpt-video">
-                                                                Upper mars temple frame. There basically, due are and
-                                                                collection her a their and that differentiates not,
-                                                                train however merely... </div>
+                                                                A java Workshop</div>
+
                                                             <div class="author-wrapper-vid">
                                                                 <figure class="author-ava">
-                                                                    <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp2-1-150x150.jpg"
-                                                                        alt="Jimmy Rilley" data-no-retina>
+                                                                    <a
+                                                                        href="https://blutube.themesawesome.com/author/creator2/">
+                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp2-1-150x150.jpg"
+                                                                            alt="Jimmy Rilley" data-no-retina></a>
                                                                 </figure>
                                                                 <span class="vcard"><a
                                                                         href="https://blutube.themesawesome.com/author/creator2/">
                                                                         Jimmy Rilley</a></span>
                                                             </div>
+
                                                         </div>
+
                                                         <div class="overlay-hero"></div>
                                                     </div>
+
                                                     <div class="video-item swiper-slide"
-                                                        style="background-image: url(https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/ent1atiny.jpg); background-size: cover;  min-height: 100vh;">
+                                                        style="background-image: url(img/slideshow/2.png); background-size: cover;  min-height: 100vh;">
+
+                                                        <!-- <video autoplay muted loop style="height: 150%; width: 150%; ">
+                                                            <source src="video.mp4" type="video/mp4">
+                                                        </video> -->
+
+                                                        <h1 id="welcome"
+                                                            style="text-align: center; position: relative; z-index: 999; margin-top: 200px; padding: 5%; font-size: 500%;">
+                                                            video galary name goes here</h1>
+
+
                                                         <div class="inner-img-video">
+
+
                                                             <div class="tag-wrapper meta-top">
-                                                                <a href="https://blutube.themesawesome.com/video-category/editor-choice/"
-                                                                    rel="tag">Editor Choice</a> <a
-                                                                    href="https://blutube.themesawesome.com/video-category/entertainment/"
-                                                                    rel="tag">Entertainment</a>
+                                                                <a class="headerVideoLink" href="#video2"
+                                                                    target="_blank" class="popup-modal">
+                                                                    Watch Now
+                                                                </a>
                                                             </div>
-                                                            <h1 class="video-title"><a
-                                                                    href="https://blutube.themesawesome.com/video/sported-of-put-concepts-using-candidates/">Sported
-                                                                    of put concepts using candidates</a></h1>
-                                                            <div class="excerpt-video">
-                                                                It coast way being came in after circumstances was
-                                                                behind shall if story neighbours at cat nor to that
-                                                                who... </div>
-                                                            <div class="author-wrapper-vid">
-                                                                <figure class="author-ava">
-                                                                    <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp10-150x150.jpg"
-                                                                        alt="Lucas Stalone" data-no-retina>
-                                                                </figure>
-                                                                <span class="vcard"><a
-                                                                        href="https://blutube.themesawesome.com/author/creator7/">
-                                                                        Lucas Stalone</a></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="overlay-hero"></div>
-                                                    </div>
-                                                    <div class="video-item swiper-slide"
-                                                        style="background-image: url(https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/comedy4atiny.jpg); background-size: cover;  min-height: 100vh;">
-                                                        <div class="inner-img-video">
-                                                            <div class="tag-wrapper meta-top">
-                                                                <a href="https://blutube.themesawesome.com/video-category/comedy/"
-                                                                    rel="tag">Comedy</a> <a
-                                                                    href="https://blutube.themesawesome.com/video-category/editor-choice/"
-                                                                    rel="tag">Editor Choice</a>
-                                                            </div>
-                                                            <h1 class="video-title"><a
-                                                                    href="https://blutube.themesawesome.com/video/background-her-unmoved-municipal-duties-overall-yet-before/">Background
-                                                                    her unmoved municipal duties, overall yet
-                                                                    before.</a></h1>
-                                                            <div class="excerpt-video">
-                                                                Pass box far buttons deep from scolded white rippedup,
-                                                                elite. To bit eyes. Gilded back he detailed to diagrams
-                                                                but... </div>
-                                                            <div class="author-wrapper-vid">
-                                                                <figure class="author-ava">
-                                                                    <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp4-150x150.jpg"
-                                                                        alt="Isabel Adams" data-no-retina>
-                                                                </figure>
-                                                                <span class="vcard"><a
-                                                                        href="https://blutube.themesawesome.com/author/creator5/">
-                                                                        Isabel Adams</a></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="overlay-hero"></div>
-                                                    </div>
-                                                    <div class="video-item swiper-slide"
-                                                        style="background-image: url(https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/animation7atiny.jpg); background-size: cover;  min-height: 100vh;">
-                                                        <div class="inner-img-video">
-                                                            <div class="tag-wrapper meta-top">
-                                                                <a href="https://blutube.themesawesome.com/video-category/animation/"
-                                                                    rel="tag">Animation</a> <a
-                                                                    href="https://blutube.themesawesome.com/video-category/editor-choice/"
-                                                                    rel="tag">Editor Choice</a>
-                                                            </div>
-                                                            <h1 class="video-title"><a
-                                                                    href="https://blutube.themesawesome.com/video/torn-wonder-which-a-behind-never-as-own-pretty-kind/">Torn
-                                                                    wonder, which a behind never as own pretty kind</a>
+
+                                                            <h1 class="video-title">
+                                                                DevZone Session 02
                                                             </h1>
+
                                                             <div class="excerpt-video">
-                                                                To came they&#8217;d cost. Language and which done of
-                                                                far follow time. The by makers on. Contract, which
-                                                                no&#8230; Completely... </div>
+                                                                A java Workshop</div>
+
                                                             <div class="author-wrapper-vid">
                                                                 <figure class="author-ava">
-                                                                    <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp10-150x150.jpg"
-                                                                        alt="Lucas Stalone" data-no-retina>
+                                                                    <a
+                                                                        href="https://blutube.themesawesome.com/author/creator2/">
+                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp2-1-150x150.jpg"
+                                                                            alt="Jimmy Rilley" data-no-retina></a>
                                                                 </figure>
                                                                 <span class="vcard"><a
-                                                                        href="https://blutube.themesawesome.com/author/creator7/">
-                                                                        Lucas Stalone</a></span>
+                                                                        href="https://blutube.themesawesome.com/author/creator2/">
+                                                                        Jimmy Rilley</a></span>
                                                             </div>
+
                                                         </div>
+
                                                         <div class="overlay-hero"></div>
                                                     </div>
                                                     <div class="video-item swiper-slide"
-                                                        style="background-image: url(https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos3atiny.jpg); background-size: cover;  min-height: 100vh;">
+                                                        style="background-image: url(img/slideshow/3.jpg); background-size: cover;  min-height: 100vh;">
+
+                                                        <!-- <video autoplay muted loop style="height: 150%; width: 150%; ">
+                                                        <source src="video.mp4" type="video/mp4">
+                                                    </video> -->
+
+                                                        <h1 id="welcome"
+                                                            style="text-align: center; position: relative; z-index: 999; margin-top: 200px; padding: 5%; font-size: 500%;">
+                                                            video galary name goes here</h1>
+
+
                                                         <div class="inner-img-video">
+
+
                                                             <div class="tag-wrapper meta-top">
-                                                                <a href="https://blutube.themesawesome.com/video-category/autos-vehicles/"
-                                                                    rel="tag">Autos &amp; Vehicles</a> <a
-                                                                    href="https://blutube.themesawesome.com/video-category/editor-choice/"
-                                                                    rel="tag">Editor Choice</a>
+                                                                <a class="headerVideoLink" href="#video3"
+                                                                    target="_blank" class="popup-modal">
+                                                                    Watch Now
+                                                                </a>
                                                             </div>
-                                                            <h1 class="video-title"><a
-                                                                    href="https://blutube.themesawesome.com/video/self-hosted-video/">Self-Hosted
-                                                                    Video</a></h1>
+
+                                                            <h1 class="video-title">
+                                                                DevZone Session 03
+                                                            </h1>
+
                                                             <div class="excerpt-video">
-                                                                Them. We quarter as it pass would as copy relative was
-                                                                the it always of lifted are plans. A gods,... </div>
+                                                                A java Workshop</div>
+
                                                             <div class="author-wrapper-vid">
                                                                 <figure class="author-ava">
-                                                                    <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp9-150x150.jpg"
-                                                                        alt="Anneke Leitz" data-no-retina>
+                                                                    <a
+                                                                        href="https://blutube.themesawesome.com/author/creator2/">
+                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp2-1-150x150.jpg"
+                                                                            alt="Jimmy Rilley" data-no-retina></a>
                                                                 </figure>
                                                                 <span class="vcard"><a
-                                                                        href="https://blutube.themesawesome.com/author/creator10/">
-                                                                        Anneke Leitz</a></span>
+                                                                        href="https://blutube.themesawesome.com/author/creator2/">
+                                                                        Jimmy Rilley</a></span>
                                                             </div>
+
                                                         </div>
+
                                                         <div class="overlay-hero"></div>
                                                     </div>
+                                                    <div class="video-item swiper-slide"
+                                                        style="background-image: url(img/slideshow/4.jpg); background-size: cover;  min-height: 100vh;">
+
+                                                        <!-- <video autoplay muted loop style="height: 150%; width: 150%; ">
+                                                    <source src="video.mp4" type="video/mp4">
+                                                </video> -->
+
+                                                        <h1 id="welcome"
+                                                            style="text-align: center; position: relative; z-index: 999; margin-top: 200px; padding: 5%; font-size: 500%;">
+                                                            video galary name goes here</h1>
+
+
+                                                        <div class="inner-img-video">
+
+
+                                                            <div class="tag-wrapper meta-top">
+                                                                <a class="headerVideoLink" href="#video4"
+                                                                    target="_blank" class="popup-modal">
+                                                                    Watch Now
+                                                                </a>
+                                                            </div>
+
+                                                            <h1 class="video-title">
+                                                                DevZone Session 04
+                                                            </h1>
+
+                                                            <div class="excerpt-video">
+                                                                A java Workshop</div>
+
+                                                            <div class="author-wrapper-vid">
+                                                                <figure class="author-ava">
+                                                                    <a
+                                                                        href="https://blutube.themesawesome.com/author/creator2/">
+                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp2-1-150x150.jpg"
+                                                                            alt="Jimmy Rilley" data-no-retina></a>
+                                                                </figure>
+                                                                <span class="vcard"><a
+                                                                        href="https://blutube.themesawesome.com/author/creator2/">
+                                                                        Jimmy Rilley</a></span>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="overlay-hero"></div>
+                                                    </div>
+                                                    <div class="video-item swiper-slide"
+                                                        style="background-image: url(img/slideshow/5.png); background-size: cover;  min-height: 100vh;">
+
+                                                        <!-- <video autoplay muted loop style="height: 150%; width: 150%; ">
+                                                <source src="video.mp4" type="video/mp4">
+                                            </video> -->
+
+                                                        <h1 id="welcome"
+                                                            style="text-align: center; position: relative; z-index: 999; margin-top: 200px; padding: 5%; font-size: 500%;">
+                                                            video galary name goes here</h1>
+
+
+                                                        <div class="inner-img-video">
+
+
+                                                            <div class="tag-wrapper meta-top">
+                                                                <a class="headerVideoLink" href="#video5"
+                                                                    target="_blank" class="popup-modal">
+                                                                    Watch Now
+                                                                </a>
+                                                            </div>
+
+                                                            <h1 class="video-title">
+                                                                DevZone Session 05
+                                                            </h1>
+
+                                                            <div class="excerpt-video">
+                                                                A java Workshop</div>
+
+                                                            <div class="author-wrapper-vid">
+                                                                <figure class="author-ava">
+                                                                    <a
+                                                                        href="https://blutube.themesawesome.com/author/creator2/">
+                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp2-1-150x150.jpg"
+                                                                            alt="Jimmy Rilley" data-no-retina></a>
+                                                                </figure>
+                                                                <span class="vcard"><a
+                                                                        href="https://blutube.themesawesome.com/author/creator2/">
+                                                                        Jimmy Rilley</a></span>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="overlay-hero"></div>
+                                                    </div>
+
                                                 </div>
 
                                                 <div class="swiper-pagination"></div>
@@ -2304,729 +2425,7 @@
                         </div>
                     </div>
                 </section>
-                <section
-                    class="elementor-section elementor-top-section elementor-element elementor-element-af4b481 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-                    data-id="af4b481" data-element_type="section">
-                    <div class="elementor-container elementor-column-gap-no">
-                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7317dff"
-                            data-id="7317dff" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                                <section
-                                    class="elementor-section elementor-inner-section elementor-element elementor-element-d5a4aff elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-                                    data-id="d5a4aff" data-element_type="section">
-                                    <div class="elementor-container elementor-column-gap-no">
-                                        <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-51e8297"
-                                            data-id="51e8297" data-element_type="column">
-                                            <div class="elementor-widget-wrap elementor-element-populated">
-                                                <div class="elementor-element elementor-element-bc74762 elementor-widget elementor-widget-heading"
-                                                    data-id="bc74762" data-element_type="widget"
-                                                    data-widget_type="heading.default">
-                                                    <div class="elementor-widget-container">
-                                                        <h2 class="elementor-heading-title elementor-size-default">
-                                                            Trending</h2>
-                                                    </div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-f26bbc1 elementor-widget__width-initial elementor-widget elementor-widget-spacer"
-                                                    data-id="f26bbc1" data-element_type="widget"
-                                                    data-widget_type="spacer.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-spacer">
-                                                            <div class="elementor-spacer-inner"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <div class="elementor-element elementor-element-a32040f elementor-widget elementor-widget-blutube-video-block"
-                                    data-id="a32040f" data-element_type="widget"
-                                    data-widget_type="blutube-video-block.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="video-wrap style-2 ele rand-1540">
-                                            <div class="swiper-container">
 
-                                                <div class="swiper-wrapper">
-                                                    <div class="video-item swiper-slide">
-                                                        <div class="video-thumb">
-                                                            <a
-                                                                href="https://blutube.themesawesome.com/video/torn-wonder-which-a-behind-never-as-own-pretty-kind/">
-                                                                <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/animation7atiny-535x355.jpg"
-                                                                    alt="Torn wonder, which a behind never as own pretty kind"
-                                                                    data-no-retina />
-                                                                <div class="play-button-hover">
-                                                                    <i class="fa fa-play play-button"></i>
-                                                                </div>
-                                                                <div class="overlay-video"></div>
-                                                            </a>
-                                                            <figure class="author-ava">
-                                                                <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp10-150x150.jpg"
-                                                                    alt="Lucas Stalone" data-no-retina>
-                                                            </figure>
-                                                        </div>
-                                                        <h4 class="video-title"><a
-                                                                href="https://blutube.themesawesome.com/video/torn-wonder-which-a-behind-never-as-own-pretty-kind/">Torn
-                                                                wonder, which a behind never as own pretty kind</a></h4>
-                                                        <span class="vcard"><a
-                                                                href="https://blutube.themesawesome.com/author/creator7/">
-                                                                Lucas Stalone</a></span>
-                                                        <div class="views-video">
-                                                            <span>407 Views</span>
-                                                            <span>5 months ago</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="video-item swiper-slide">
-                                                        <div class="video-thumb">
-                                                            <a
-                                                                href="https://blutube.themesawesome.com/video/self-hosted-video/">
-                                                                <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos3atiny-535x355.jpg"
-                                                                    alt="Self-Hosted Video" data-no-retina />
-                                                                <div class="play-button-hover">
-                                                                    <i class="fa fa-play play-button"></i>
-                                                                </div>
-                                                                <div class="overlay-video"></div>
-                                                            </a>
-                                                            <figure class="author-ava">
-                                                                <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp9-150x150.jpg"
-                                                                    alt="Anneke Leitz" data-no-retina>
-                                                            </figure>
-                                                        </div>
-                                                        <h4 class="video-title"><a
-                                                                href="https://blutube.themesawesome.com/video/self-hosted-video/">Self-Hosted
-                                                                Video</a></h4>
-                                                        <span class="vcard"><a
-                                                                href="https://blutube.themesawesome.com/author/creator10/">
-                                                                Anneke Leitz</a></span>
-                                                        <div class="views-video">
-                                                            <span>275 Views</span>
-                                                            <span>5 months ago</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="video-item swiper-slide">
-                                                        <div class="video-thumb">
-                                                            <a
-                                                                href="https://blutube.themesawesome.com/video/produce-or-cost-into-had-because/">
-                                                                <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos9-535x355.jpg"
-                                                                    alt="Produce or cost. Into had because"
-                                                                    data-no-retina />
-                                                                <div class="play-button-hover">
-                                                                    <i class="fa fa-play play-button"></i>
-                                                                </div>
-                                                                <div class="overlay-video"></div>
-                                                            </a>
-                                                            <figure class="author-ava">
-                                                                <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp2-1-150x150.jpg"
-                                                                    alt="Jimmy Rilley" data-no-retina>
-                                                            </figure>
-                                                        </div>
-                                                        <h4 class="video-title"><a
-                                                                href="https://blutube.themesawesome.com/video/produce-or-cost-into-had-because/">Produce
-                                                                or cost. Into had because</a></h4>
-                                                        <span class="vcard"><a
-                                                                href="https://blutube.themesawesome.com/author/creator2/">
-                                                                Jimmy Rilley</a></span>
-                                                        <div class="views-video">
-                                                            <span>222 Views</span>
-                                                            <span>5 months ago</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="video-item swiper-slide">
-                                                        <div class="video-thumb">
-                                                            <a
-                                                                href="https://blutube.themesawesome.com/video/appointed-decorated-the-croissants-thought/">
-                                                                <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/fl1c-535x355.jpg"
-                                                                    alt="Appointed decorated the croissants thought"
-                                                                    data-no-retina />
-                                                                <div class="play-button-hover">
-                                                                    <i class="fa fa-play play-button"></i>
-                                                                </div>
-                                                                <div class="overlay-video"></div>
-                                                            </a>
-                                                            <figure class="author-ava">
-                                                                <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp2-1-150x150.jpg"
-                                                                    alt="Jimmy Rilley" data-no-retina>
-                                                            </figure>
-                                                        </div>
-                                                        <h4 class="video-title"><a
-                                                                href="https://blutube.themesawesome.com/video/appointed-decorated-the-croissants-thought/">Appointed
-                                                                decorated the croissants thought</a></h4>
-                                                        <span class="vcard"><a
-                                                                href="https://blutube.themesawesome.com/author/creator2/">
-                                                                Jimmy Rilley</a></span>
-                                                        <div class="views-video">
-                                                            <span>217 Views</span>
-                                                            <span>5 months ago</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="video-item swiper-slide">
-                                                        <div class="video-thumb">
-                                                            <a
-                                                                href="https://blutube.themesawesome.com/video/release-clean-in-anyone-parts-sure-the-of-around-was/">
-                                                                <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos8-535x355.jpg"
-                                                                    alt="Release clean in anyone parts sure the of around was."
-                                                                    data-no-retina />
-                                                                <div class="play-button-hover">
-                                                                    <i class="fa fa-play play-button"></i>
-                                                                </div>
-                                                                <div class="overlay-video"></div>
-                                                            </a>
-                                                            <figure class="author-ava">
-                                                                <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp-150x150.jpg"
-                                                                    alt="John Doe" data-no-retina>
-                                                            </figure>
-                                                        </div>
-                                                        <h4 class="video-title"><a
-                                                                href="https://blutube.themesawesome.com/video/release-clean-in-anyone-parts-sure-the-of-around-was/">Release
-                                                                clean in anyone parts sure the of around was.</a></h4>
-                                                        <span class="vcard"><a
-                                                                href="https://blutube.themesawesome.com/author/jhon_doe/">
-                                                                John Doe</a></span>
-                                                        <div class="views-video">
-                                                            <span>198 Views</span>
-                                                            <span>5 months ago</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="video-item swiper-slide">
-                                                        <div class="video-thumb">
-                                                            <a
-                                                                href="https://blutube.themesawesome.com/video/background-her-unmoved-municipal-duties-overall-yet-before/">
-                                                                <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/comedy4atiny-535x355.jpg"
-                                                                    alt="Background her unmoved municipal duties, overall yet before."
-                                                                    data-no-retina />
-                                                                <div class="play-button-hover">
-                                                                    <i class="fa fa-play play-button"></i>
-                                                                </div>
-                                                                <div class="overlay-video"></div>
-                                                            </a>
-                                                            <figure class="author-ava">
-                                                                <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp4-150x150.jpg"
-                                                                    alt="Isabel Adams" data-no-retina>
-                                                            </figure>
-                                                        </div>
-                                                        <h4 class="video-title"><a
-                                                                href="https://blutube.themesawesome.com/video/background-her-unmoved-municipal-duties-overall-yet-before/">Background
-                                                                her unmoved municipal duties, overall yet before.</a>
-                                                        </h4>
-                                                        <span class="vcard"><a
-                                                                href="https://blutube.themesawesome.com/author/creator5/">
-                                                                Isabel Adams</a></span>
-                                                        <div class="views-video">
-                                                            <span>187 Views</span>
-                                                            <span>5 months ago</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="video-item swiper-slide">
-                                                        <div class="video-thumb">
-                                                            <a
-                                                                href="https://blutube.themesawesome.com/video/time-takes-behind-the-so-real/">
-                                                                <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/animation6-535x355.jpg"
-                                                                    alt="Time takes behind the so real"
-                                                                    data-no-retina />
-                                                                <div class="play-button-hover">
-                                                                    <i class="fa fa-play play-button"></i>
-                                                                </div>
-                                                                <div class="overlay-video"></div>
-                                                            </a>
-                                                            <figure class="author-ava">
-                                                                <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp-150x150.jpg"
-                                                                    alt="John Doe" data-no-retina>
-                                                            </figure>
-                                                        </div>
-                                                        <h4 class="video-title"><a
-                                                                href="https://blutube.themesawesome.com/video/time-takes-behind-the-so-real/">Time
-                                                                takes behind the so real</a></h4>
-                                                        <span class="vcard"><a
-                                                                href="https://blutube.themesawesome.com/author/jhon_doe/">
-                                                                John Doe</a></span>
-                                                        <div class="views-video">
-                                                            <span>184 Views</span>
-                                                            <span>5 months ago</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="video-item swiper-slide">
-                                                        <div class="video-thumb">
-                                                            <a
-                                                                href="https://blutube.themesawesome.com/video/for-understanding-some-out-and-a-wasnt-be-has-where/">
-                                                                <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/animation5-535x355.jpg"
-                                                                    alt="For understanding some out and, a wasn’t be has where"
-                                                                    data-no-retina />
-                                                                <div class="play-button-hover">
-                                                                    <i class="fa fa-play play-button"></i>
-                                                                </div>
-                                                                <div class="overlay-video"></div>
-                                                            </a>
-                                                            <figure class="author-ava">
-                                                                <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp7-150x150.jpg"
-                                                                    alt="Eloisa Campagna" data-no-retina>
-                                                            </figure>
-                                                        </div>
-                                                        <h4 class="video-title"><a
-                                                                href="https://blutube.themesawesome.com/video/for-understanding-some-out-and-a-wasnt-be-has-where/">For
-                                                                understanding some out and, a wasn’t be has where</a>
-                                                        </h4>
-                                                        <span class="vcard"><a
-                                                                href="https://blutube.themesawesome.com/author/creator8/">
-                                                                Eloisa Campagna</a></span>
-                                                        <div class="views-video">
-                                                            <span>178 Views</span>
-                                                            <span>5 months ago</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="video-item swiper-slide">
-                                                        <div class="video-thumb">
-                                                            <a
-                                                                href="https://blutube.themesawesome.com/video/and-not-watch-a-to-these-bit-problem-that-attempt/">
-                                                                <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos1-535x355.jpg"
-                                                                    alt="And not, watch a to these bit problem. That attempt."
-                                                                    data-no-retina />
-                                                                <div class="play-button-hover">
-                                                                    <i class="fa fa-play play-button"></i>
-                                                                </div>
-                                                                <div class="overlay-video"></div>
-                                                            </a>
-                                                            <figure class="author-ava">
-                                                                <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp-150x150.jpg"
-                                                                    alt="John Doe" data-no-retina>
-                                                            </figure>
-                                                        </div>
-                                                        <h4 class="video-title"><a
-                                                                href="https://blutube.themesawesome.com/video/and-not-watch-a-to-these-bit-problem-that-attempt/">And
-                                                                not, watch a to these bit problem. That attempt.</a>
-                                                        </h4>
-                                                        <span class="vcard"><a
-                                                                href="https://blutube.themesawesome.com/author/jhon_doe/">
-                                                                John Doe</a></span>
-                                                        <div class="views-video">
-                                                            <span>170 Views</span>
-                                                            <span>5 months ago</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="video-item swiper-slide">
-                                                        <div class="video-thumb">
-                                                            <a
-                                                                href="https://blutube.themesawesome.com/video/at-i-where-the-have-city-2/">
-                                                                <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos2-535x355.jpg"
-                                                                    alt="At I where the have city" data-no-retina />
-                                                                <div class="play-button-hover">
-                                                                    <i class="fa fa-play play-button"></i>
-                                                                </div>
-                                                                <div class="overlay-video"></div>
-                                                            </a>
-                                                            <figure class="author-ava">
-                                                                <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp2-1-150x150.jpg"
-                                                                    alt="Jimmy Rilley" data-no-retina>
-                                                            </figure>
-                                                        </div>
-                                                        <h4 class="video-title"><a
-                                                                href="https://blutube.themesawesome.com/video/at-i-where-the-have-city-2/">At
-                                                                I where the have city</a></h4>
-                                                        <span class="vcard"><a
-                                                                href="https://blutube.themesawesome.com/author/creator2/">
-                                                                Jimmy Rilley</a></span>
-                                                        <div class="views-video">
-                                                            <span>165 Views</span>
-                                                            <span>5 months ago</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <div class="swiper-pagination"></div>
-                                        </div>
-
-                                        <script>
-                                            (function ($) {
-
-                                                $(document).ready(function () {
-
-                                                    var swiper = new Swiper('.video-wrap.rand-1540 .swiper-container', {
-                                                        slidesPerView: 1,
-                                                        spaceBetween: 20,
-                                                        pagination: {
-                                                            el: '.video-wrap.rand-1540 .swiper-pagination',
-                                                            clickable: true,
-                                                        },
-                                                        breakpoints: {
-                                                            0: {
-                                                                slidesPerView: 1,
-                                                                spaceBetween: 20,
-
-                                                            },
-
-                                                            768: {
-                                                                slidesPerView: 2,
-                                                                spaceBetween: 20,
-
-                                                            },
-
-                                                            1025: {
-                                                                slidesPerView: 5,
-                                                                spaceBetween: 20,
-                                                            },
-
-                                                        },
-                                                    });
-                                                });
-
-                                            })(jQuery);
-                                        </script>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section
-                    class="elementor-section elementor-top-section elementor-element elementor-element-5d91e8e elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-                    data-id="5d91e8e" data-element_type="section">
-                    <div class="elementor-container elementor-column-gap-no">
-                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-11e04db"
-                            data-id="11e04db" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                                <section
-                                    class="elementor-section elementor-inner-section elementor-element elementor-element-da16c46 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-                                    data-id="da16c46" data-element_type="section">
-                                    <div class="elementor-container elementor-column-gap-no">
-                                        <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-b224f7e"
-                                            data-id="b224f7e" data-element_type="column">
-                                            <div class="elementor-widget-wrap elementor-element-populated">
-                                                <div class="elementor-element elementor-element-e9865f0 elementor-widget elementor-widget-heading"
-                                                    data-id="e9865f0" data-element_type="widget"
-                                                    data-widget_type="heading.default">
-                                                    <div class="elementor-widget-container">
-                                                        <h2 class="elementor-heading-title elementor-size-default">
-                                                            Recent Videos</h2>
-                                                    </div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-eb4da76 elementor-widget__width-initial elementor-widget elementor-widget-spacer"
-                                                    data-id="eb4da76" data-element_type="widget"
-                                                    data-widget_type="spacer.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-spacer">
-                                                            <div class="elementor-spacer-inner"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <div class="elementor-element elementor-element-34ab88b elementor-widget elementor-widget-blutube-video-block"
-                                    data-id="34ab88b" data-element_type="widget"
-                                    data-widget_type="blutube-video-block.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="video-wrap ele style-1 grid rand-169">
-                                            <div class="video-item col-span-2 md:col-span-5 sm:col-span-10">
-                                                <div class="video-thumb">
-                                                    <a
-                                                        href="https://blutube.themesawesome.com/video/the-really-on-broader-sitting/">
-                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/Podcast5-535x355.jpg"
-                                                            alt="The really on broader sitting" data-no-retina />
-                                                        <div class="play-button-hover">
-                                                            <i class="fa fa-play play-button"></i>
-                                                        </div>
-                                                        <div class="overlay-video"></div>
-                                                    </a>
-                                                    <figure class="author-ava">
-                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp6-150x150.jpg"
-                                                            alt="Tim Carrey" data-no-retina>
-                                                    </figure>
-                                                </div>
-                                                <h4 class="video-title"><a
-                                                        href="https://blutube.themesawesome.com/video/the-really-on-broader-sitting/">The
-                                                        really on broader sitting</a></h4>
-                                                <span class="vcard"><a
-                                                        href="https://blutube.themesawesome.com/author/creator6/"> Tim
-                                                        Carrey</a></span>
-                                                <div class="views-video">
-                                                    <span>159 Views</span>
-                                                    <span>5 months ago</span>
-                                                </div>
-                                            </div>
-                                            <div class="video-item col-span-2 md:col-span-5 sm:col-span-10">
-                                                <div class="video-thumb">
-                                                    <a
-                                                        href="https://blutube.themesawesome.com/video/and-the-desires-a-copy/">
-                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/Podcast4-535x355.jpg"
-                                                            alt="And the desires a copy" data-no-retina />
-                                                        <div class="play-button-hover">
-                                                            <i class="fa fa-play play-button"></i>
-                                                        </div>
-                                                        <div class="overlay-video"></div>
-                                                    </a>
-                                                    <figure class="author-ava">
-                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp6-150x150.jpg"
-                                                            alt="Tim Carrey" data-no-retina>
-                                                    </figure>
-                                                </div>
-                                                <h4 class="video-title"><a
-                                                        href="https://blutube.themesawesome.com/video/and-the-desires-a-copy/">And
-                                                        the desires a copy</a></h4>
-                                                <span class="vcard"><a
-                                                        href="https://blutube.themesawesome.com/author/creator6/"> Tim
-                                                        Carrey</a></span>
-                                                <div class="views-video">
-                                                    <span>160 Views</span>
-                                                    <span>5 months ago</span>
-                                                </div>
-                                            </div>
-                                            <div class="video-item col-span-2 md:col-span-5 sm:col-span-10">
-                                                <div class="video-thumb">
-                                                    <a
-                                                        href="https://blutube.themesawesome.com/video/the-would-the-in-quite-with/">
-                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/Podcast3-535x355.jpg"
-                                                            alt="The would the in quite with" data-no-retina />
-                                                        <div class="play-button-hover">
-                                                            <i class="fa fa-play play-button"></i>
-                                                        </div>
-                                                        <div class="overlay-video"></div>
-                                                    </a>
-                                                    <figure class="author-ava">
-                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp6-150x150.jpg"
-                                                            alt="Tim Carrey" data-no-retina>
-                                                    </figure>
-                                                </div>
-                                                <h4 class="video-title"><a
-                                                        href="https://blutube.themesawesome.com/video/the-would-the-in-quite-with/">The
-                                                        would the in quite with</a></h4>
-                                                <span class="vcard"><a
-                                                        href="https://blutube.themesawesome.com/author/creator6/"> Tim
-                                                        Carrey</a></span>
-                                                <div class="views-video">
-                                                    <span>162 Views</span>
-                                                    <span>5 months ago</span>
-                                                </div>
-                                            </div>
-                                            <div class="video-item col-span-2 md:col-span-5 sm:col-span-10">
-                                                <div class="video-thumb">
-                                                    <a
-                                                        href="https://blutube.themesawesome.com/video/like-spread-our-periodic-the-and/">
-                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/Podcast1-535x355.jpg"
-                                                            alt="Like spread our periodic the and" data-no-retina />
-                                                        <div class="play-button-hover">
-                                                            <i class="fa fa-play play-button"></i>
-                                                        </div>
-                                                        <div class="overlay-video"></div>
-                                                    </a>
-                                                    <figure class="author-ava">
-                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp6-150x150.jpg"
-                                                            alt="Tim Carrey" data-no-retina>
-                                                    </figure>
-                                                </div>
-                                                <h4 class="video-title"><a
-                                                        href="https://blutube.themesawesome.com/video/like-spread-our-periodic-the-and/">Like
-                                                        spread our periodic the and</a></h4>
-                                                <span class="vcard"><a
-                                                        href="https://blutube.themesawesome.com/author/creator6/"> Tim
-                                                        Carrey</a></span>
-                                                <div class="views-video">
-                                                    <span>143 Views</span>
-                                                    <span>5 months ago</span>
-                                                </div>
-                                            </div>
-                                            <div class="video-item col-span-2 md:col-span-5 sm:col-span-10">
-                                                <div class="video-thumb">
-                                                    <a
-                                                        href="https://blutube.themesawesome.com/video/into-to-the-to-according-law/">
-                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/Podcast2-535x355.jpg"
-                                                            alt="Into to the to according law" data-no-retina />
-                                                        <div class="play-button-hover">
-                                                            <i class="fa fa-play play-button"></i>
-                                                        </div>
-                                                        <div class="overlay-video"></div>
-                                                    </a>
-                                                    <figure class="author-ava">
-                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp6-150x150.jpg"
-                                                            alt="Tim Carrey" data-no-retina>
-                                                    </figure>
-                                                </div>
-                                                <h4 class="video-title"><a
-                                                        href="https://blutube.themesawesome.com/video/into-to-the-to-according-law/">Into
-                                                        to the to according law</a></h4>
-                                                <span class="vcard"><a
-                                                        href="https://blutube.themesawesome.com/author/creator6/"> Tim
-                                                        Carrey</a></span>
-                                                <div class="views-video">
-                                                    <span>125 Views</span>
-                                                    <span>5 months ago</span>
-                                                </div>
-                                            </div>
-                                            <div class="video-item col-span-2 md:col-span-5 sm:col-span-10">
-                                                <div class="video-thumb">
-                                                    <a
-                                                        href="https://blutube.themesawesome.com/video/the-dream-are-yield-times-and/">
-                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/traditional5-535x355.jpg"
-                                                            alt="The dream. Are yield times, and" data-no-retina />
-                                                        <div class="play-button-hover">
-                                                            <i class="fa fa-play play-button"></i>
-                                                        </div>
-                                                        <div class="overlay-video"></div>
-                                                    </a>
-                                                    <figure class="author-ava">
-                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp8-150x150.jpg"
-                                                            alt="Mao Huiqing" data-no-retina>
-                                                    </figure>
-                                                </div>
-                                                <h4 class="video-title"><a
-                                                        href="https://blutube.themesawesome.com/video/the-dream-are-yield-times-and/">The
-                                                        dream. Are yield times, and</a></h4>
-                                                <span class="vcard"><a
-                                                        href="https://blutube.themesawesome.com/author/creator9/"> Mao
-                                                        Huiqing</a></span>
-                                                <div class="views-video">
-                                                    <span>131 Views</span>
-                                                    <span>5 months ago</span>
-                                                </div>
-                                            </div>
-                                            <div class="video-item col-span-2 md:col-span-5 sm:col-span-10">
-                                                <div class="video-thumb">
-                                                    <a
-                                                        href="https://blutube.themesawesome.com/video/fresh-on-pouring-that-had-writing/">
-                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/News7-535x355.jpg"
-                                                            alt="Fresh on pouring that had writing" data-no-retina />
-                                                        <div class="play-button-hover">
-                                                            <i class="fa fa-play play-button"></i>
-                                                        </div>
-                                                        <div class="overlay-video"></div>
-                                                    </a>
-                                                    <figure class="author-ava">
-                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp4-150x150.jpg"
-                                                            alt="Isabel Adams" data-no-retina>
-                                                    </figure>
-                                                </div>
-                                                <h4 class="video-title"><a
-                                                        href="https://blutube.themesawesome.com/video/fresh-on-pouring-that-had-writing/">Fresh
-                                                        on pouring that had writing</a></h4>
-                                                <span class="vcard"><a
-                                                        href="https://blutube.themesawesome.com/author/creator5/">
-                                                        Isabel Adams</a></span>
-                                                <div class="views-video">
-                                                    <span>127 Views</span>
-                                                    <span>5 months ago</span>
-                                                </div>
-                                            </div>
-                                            <div class="video-item col-span-2 md:col-span-5 sm:col-span-10">
-                                                <div class="video-thumb">
-                                                    <a
-                                                        href="https://blutube.themesawesome.com/video/uniforms-avarice-so-people-disciplined/">
-                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/News6-535x355.jpg"
-                                                            alt="uniforms, avarice so, people disciplined"
-                                                            data-no-retina />
-                                                        <div class="play-button-hover">
-                                                            <i class="fa fa-play play-button"></i>
-                                                        </div>
-                                                        <div class="overlay-video"></div>
-                                                    </a>
-                                                    <figure class="author-ava">
-                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp4-150x150.jpg"
-                                                            alt="Isabel Adams" data-no-retina>
-                                                    </figure>
-                                                </div>
-                                                <h4 class="video-title"><a
-                                                        href="https://blutube.themesawesome.com/video/uniforms-avarice-so-people-disciplined/">uniforms,
-                                                        avarice so, people disciplined</a></h4>
-                                                <span class="vcard"><a
-                                                        href="https://blutube.themesawesome.com/author/creator5/">
-                                                        Isabel Adams</a></span>
-                                                <div class="views-video">
-                                                    <span>142 Views</span>
-                                                    <span>5 months ago</span>
-                                                </div>
-                                            </div>
-                                            <div class="video-item col-span-2 md:col-span-5 sm:col-span-10">
-                                                <div class="video-thumb">
-                                                    <a
-                                                        href="https://blutube.themesawesome.com/video/for-editorials-made-the-that-with/">
-                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/traditional4-535x355.jpg"
-                                                            alt="For editorials made the that with" data-no-retina />
-                                                        <div class="play-button-hover">
-                                                            <i class="fa fa-play play-button"></i>
-                                                        </div>
-                                                        <div class="overlay-video"></div>
-                                                    </a>
-                                                    <figure class="author-ava">
-                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp8-150x150.jpg"
-                                                            alt="Mao Huiqing" data-no-retina>
-                                                    </figure>
-                                                </div>
-                                                <h4 class="video-title"><a
-                                                        href="https://blutube.themesawesome.com/video/for-editorials-made-the-that-with/">For
-                                                        editorials made the that with</a></h4>
-                                                <span class="vcard"><a
-                                                        href="https://blutube.themesawesome.com/author/creator9/"> Mao
-                                                        Huiqing</a></span>
-                                                <div class="views-video">
-                                                    <span>126 Views</span>
-                                                    <span>5 months ago</span>
-                                                </div>
-                                            </div>
-                                            <div class="video-item col-span-2 md:col-span-5 sm:col-span-10">
-                                                <div class="video-thumb">
-                                                    <a
-                                                        href="https://blutube.themesawesome.com/video/expenses-looked-this-the-had-day/">
-                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/News5-535x355.jpg"
-                                                            alt="Expenses looked this the had day." data-no-retina />
-                                                        <div class="play-button-hover">
-                                                            <i class="fa fa-play play-button"></i>
-                                                        </div>
-                                                        <div class="overlay-video"></div>
-                                                    </a>
-                                                    <figure class="author-ava">
-                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp4-150x150.jpg"
-                                                            alt="Isabel Adams" data-no-retina>
-                                                    </figure>
-                                                </div>
-                                                <h4 class="video-title"><a
-                                                        href="https://blutube.themesawesome.com/video/expenses-looked-this-the-had-day/">Expenses
-                                                        looked this the had day.</a></h4>
-                                                <span class="vcard"><a
-                                                        href="https://blutube.themesawesome.com/author/creator5/">
-                                                        Isabel Adams</a></span>
-                                                <div class="views-video">
-                                                    <span>112 Views</span>
-                                                    <span>5 months ago</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <script>
-                                            (function ($) {
-                                                var winWidth = $(window).innerWidth();
-
-                                                function changingWrapBlutube() {
-                                                    var winWidth = $(window).innerWidth(),
-                                                        gridMain = $('.video-wrap.style-1.rand-169');
-                                                    if (winWidth > 0 && winWidth < 769) {
-                                                        var posisi = "mob";
-                                                        gridMain.removeClass('grid-cols-12');
-                                                        gridMain.addClass('grid-cols-10');
-                                                    } else if (winWidth > 769 && winWidth < 1025) {
-                                                        var posisi = "tab";
-                                                        gridMain.removeClass('grid-cols-12');
-                                                        gridMain.addClass('grid-cols-10');
-                                                    } else {
-                                                        var posisi = "desktop";
-                                                        gridMain.removeClass('grid-cols-12');
-                                                        gridMain.addClass('grid-cols-10');
-                                                    }
-                                                }
-
-                                                $(document).ready(function () {
-                                                    changingWrapBlutube();
-                                                });
-
-                                                $(window).on('resize', function () {
-                                                    changingWrapBlutube();
-                                                });
-
-                                            })(jQuery);
-                                        </script>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
                 <section
                     class="elementor-section elementor-top-section elementor-element elementor-element-e6f7a1c elementor-section-full_width elementor-section-height-default elementor-section-height-default"
                     data-id="e6f7a1c" data-element_type="section"
@@ -3046,8 +2445,8 @@
                                                     data-id="046caf3" data-element_type="widget"
                                                     data-widget_type="heading.default">
                                                     <div class="elementor-widget-container">
-                                                        <h2 class="elementor-heading-title elementor-size-default">Autos
-                                                            Videos</h2>
+                                                        <h2 class="elementor-heading-title elementor-size-default">
+                                                            Autos Videos</h2>
                                                     </div>
                                                 </div>
                                                 <div class="elementor-element elementor-element-e456458 elementor-widget__width-initial elementor-widget elementor-widget-spacer"
@@ -3071,11 +2470,70 @@
                                             <div class="video-wrap style-5 ele rand-2752">
                                                 <div class="swiper-container">
                                                     <div class="swiper-wrapper">
+
                                                         <div class="video-item swiper-slide">
                                                             <div class="post-wrap">
                                                                 <div class="post-thumb">
-                                                                    <a
-                                                                        href="https://blutube.themesawesome.com/video/produce-or-cost-into-had-because/">
+                                                                    <a class="headerVideoLink" href="#video1"
+                                                                        target="_blank" class="popup-modal">
+                                                                        <div class="play-button-hover">
+                                                                            <i class="fa fa-play play-button"></i>
+                                                                        </div>
+                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos9-535x355.jpg"
+                                                                            alt="Produce or cost. Into had because"
+                                                                            data-no-retina />
+                                                                    </a>
+                                                                </div>
+                                                                <div class="post-content">
+                                                                    <div class="post-author clearfix">
+                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp2-1-150x150.jpg"
+                                                                            data-no-retina alt="Jimmy Rilley">
+                                                                        <span>
+                                                                            <a
+                                                                                href="https://blutube.themesawesome.com/author/creator2/">
+                                                                                Jimmy Rilley
+                                                                            </a>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="post-title">
+                                                                        <h4> <a class="headerVideoLink" href="#video1"
+                                                                                target="_blank"
+                                                                                class="popup-modal">Produce
+                                                                                or cost. Into had because</a></h4>
+                                                                        <span class="views">222 Views</span>
+                                                                        <span class="hours">5 months ago</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- <a class="headerVideoLink" href="#video1" target="_blank"
+                                                                class="popup-modal">
+                                                                Watch Our Video
+                                                            </a> -->
+
+                                                            <div id="video1"
+                                                                class="mfp-hide embed-responsive embed-responsive-21by9 headerPopup">
+
+                                                                <!-- <iframe width="560" height="315"
+                                                                    src="https://www.youtube.com/embed/IfrfJn_-24g"
+                                                                    title="YouTube video player" frameborder="0"
+                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                                    allowfullscreen></iframe> -->
+
+                                                                <iframe width="560" height="315"
+                                                                    src="https://www.youtube.com/embed/videoseries?list=PLIV1P6OrbqH_E9FAzNtyYMU7oGBjXXACJ"
+                                                                    title="YouTube video player" frameborder="0"
+                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                                    allowfullscreen></iframe>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="video-item swiper-slide">
+                                                            <div class="post-wrap">
+                                                                <div class="post-thumb">
+                                                                    <a class="headerVideoLink" href="#video1"
+                                                                        target="_blank" class="popup-modal">
                                                                         <div class="play-button-hover">
                                                                             <i class="fa fa-play play-button"></i>
                                                                         </div>
@@ -3093,57 +2551,41 @@
                                                                                 Rilley</a></span>
                                                                     </div>
                                                                     <div class="post-title">
-                                                                        <h4><a
-                                                                                href="https://blutube.themesawesome.com/video/produce-or-cost-into-had-because/">Produce
+                                                                        <h4> <a class="headerVideoLink" href="#video1"
+                                                                                target="_blank"
+                                                                                class="popup-modal">Produce
                                                                                 or cost. Into had because</a></h4>
                                                                         <span class="views">222 Views</span>
                                                                         <span class="hours">5 months ago</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="video-item swiper-slide">
-                                                            <div class="post-wrap">
-                                                                <div class="post-thumb">
-                                                                    <a
-                                                                        href="https://blutube.themesawesome.com/video/and-not-watch-a-to-these-bit-problem-that-attempt/">
-                                                                        <div class="play-button-hover">
-                                                                            <i class="fa fa-play play-button"></i>
-                                                                        </div>
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos1-535x355.jpg"
-                                                                            alt="And not, watch a to these bit problem. That attempt."
-                                                                            data-no-retina />
-                                                                    </a>
-                                                                </div>
-                                                                <div class="post-content">
-                                                                    <div class="post-author clearfix">
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp-150x150.jpg"
-                                                                            data-no-retina alt="John Doe">
-                                                                        <span><a
-                                                                                href="https://blutube.themesawesome.com/author/jhon_doe/">John
-                                                                                Doe</a></span>
-                                                                    </div>
-                                                                    <div class="post-title">
-                                                                        <h4><a
-                                                                                href="https://blutube.themesawesome.com/video/and-not-watch-a-to-these-bit-problem-that-attempt/">And
-                                                                                not, watch a to these bit problem. That
-                                                                                attempt.</a></h4>
-                                                                        <span class="views">170 Views</span>
-                                                                        <span class="hours">5 months ago</span>
-                                                                    </div>
-                                                                </div>
+
+                                                            <!-- <a class="headerVideoLink" href="#video1" target="_blank"
+                                                                class="popup-modal">
+                                                                Watch Our Video
+                                                            </a> -->
+
+
+                                                            <div id="video2"
+                                                                class="mfp-hide embed-responsive embed-responsive-21by9 headerPopup">
+                                                                <iframe width="560" height="315"
+                                                                    src="https://www.youtube.com/embed/IfrfJn_-24g"
+                                                                    title="YouTube video player" frameborder="0"
+                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                                    allowfullscreen></iframe>
                                                             </div>
                                                         </div>
                                                         <div class="video-item swiper-slide">
                                                             <div class="post-wrap">
                                                                 <div class="post-thumb">
-                                                                    <a
-                                                                        href="https://blutube.themesawesome.com/video/at-i-where-the-have-city-2/">
+                                                                    <a class="headerVideoLink" href="#video1"
+                                                                        target="_blank" class="popup-modal">
                                                                         <div class="play-button-hover">
                                                                             <i class="fa fa-play play-button"></i>
                                                                         </div>
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos2-535x355.jpg"
-                                                                            alt="At I where the have city"
+                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos9-535x355.jpg"
+                                                                            alt="Produce or cost. Into had because"
                                                                             data-no-retina />
                                                                     </a>
                                                                 </div>
@@ -3156,117 +2598,41 @@
                                                                                 Rilley</a></span>
                                                                     </div>
                                                                     <div class="post-title">
-                                                                        <h4><a
-                                                                                href="https://blutube.themesawesome.com/video/at-i-where-the-have-city-2/">At
-                                                                                I where the have city</a></h4>
-                                                                        <span class="views">165 Views</span>
+                                                                        <h4> <a class="headerVideoLink" href="#video1"
+                                                                                target="_blank"
+                                                                                class="popup-modal">Produce
+                                                                                or cost. Into had because</a></h4>
+                                                                        <span class="views">222 Views</span>
                                                                         <span class="hours">5 months ago</span>
                                                                     </div>
                                                                 </div>
+                                                            </div>
+
+                                                            <!-- <a class="headerVideoLink" href="#video1" target="_blank"
+                                                                class="popup-modal">
+                                                                Watch Our Video
+                                                            </a> -->
+
+
+                                                            <div id="video3"
+                                                                class="mfp-hide embed-responsive embed-responsive-21by9 headerPopup">
+                                                                <iframe width="560" height="315"
+                                                                    src="https://www.youtube.com/embed/IfrfJn_-24g"
+                                                                    title="YouTube video player" frameborder="0"
+                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                                    allowfullscreen></iframe>
                                                             </div>
                                                         </div>
                                                         <div class="video-item swiper-slide">
                                                             <div class="post-wrap">
                                                                 <div class="post-thumb">
-                                                                    <a
-                                                                        href="https://blutube.themesawesome.com/video/self-hosted-video/">
+                                                                    <a class="headerVideoLink" href="#video1"
+                                                                        target="_blank" class="popup-modal">
                                                                         <div class="play-button-hover">
                                                                             <i class="fa fa-play play-button"></i>
                                                                         </div>
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos3atiny-535x355.jpg"
-                                                                            alt="Self-Hosted Video" data-no-retina />
-                                                                    </a>
-                                                                </div>
-                                                                <div class="post-content">
-                                                                    <div class="post-author clearfix">
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp9-150x150.jpg"
-                                                                            data-no-retina alt="Anneke Leitz">
-                                                                        <span><a
-                                                                                href="https://blutube.themesawesome.com/author/creator10/">Anneke
-                                                                                Leitz</a></span>
-                                                                    </div>
-                                                                    <div class="post-title">
-                                                                        <h4><a
-                                                                                href="https://blutube.themesawesome.com/video/self-hosted-video/">Self-Hosted
-                                                                                Video</a></h4>
-                                                                        <span class="views">275 Views</span>
-                                                                        <span class="hours">5 months ago</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="video-item swiper-slide">
-                                                            <div class="post-wrap">
-                                                                <div class="post-thumb">
-                                                                    <a
-                                                                        href="https://blutube.themesawesome.com/video/at-i-where-the-have-city/">
-                                                                        <div class="play-button-hover">
-                                                                            <i class="fa fa-play play-button"></i>
-                                                                        </div>
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos4-535x355.jpg"
-                                                                            alt="At I where the have city"
-                                                                            data-no-retina />
-                                                                    </a>
-                                                                </div>
-                                                                <div class="post-content">
-                                                                    <div class="post-author clearfix">
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp6-150x150.jpg"
-                                                                            data-no-retina alt="Tim Carrey">
-                                                                        <span><a
-                                                                                href="https://blutube.themesawesome.com/author/creator6/">Tim
-                                                                                Carrey</a></span>
-                                                                    </div>
-                                                                    <div class="post-title">
-                                                                        <h4><a
-                                                                                href="https://blutube.themesawesome.com/video/at-i-where-the-have-city/">At
-                                                                                I where the have city</a></h4>
-                                                                        <span class="views">119 Views</span>
-                                                                        <span class="hours">5 months ago</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="video-item swiper-slide">
-                                                            <div class="post-wrap">
-                                                                <div class="post-thumb">
-                                                                    <a
-                                                                        href="https://blutube.themesawesome.com/video/how-ambushed-deep-that-flows-the/">
-                                                                        <div class="play-button-hover">
-                                                                            <i class="fa fa-play play-button"></i>
-                                                                        </div>
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos5-535x355.jpg"
-                                                                            alt="How ambushed deep that flows the"
-                                                                            data-no-retina />
-                                                                    </a>
-                                                                </div>
-                                                                <div class="post-content">
-                                                                    <div class="post-author clearfix">
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp5-150x150.jpg"
-                                                                            data-no-retina alt="Darrel Fox">
-                                                                        <span><a
-                                                                                href="https://blutube.themesawesome.com/author/creator3/">Darrel
-                                                                                Fox</a></span>
-                                                                    </div>
-                                                                    <div class="post-title">
-                                                                        <h4><a
-                                                                                href="https://blutube.themesawesome.com/video/how-ambushed-deep-that-flows-the/">How
-                                                                                ambushed deep that flows the</a></h4>
-                                                                        <span class="views">118 Views</span>
-                                                                        <span class="hours">5 months ago</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="video-item swiper-slide">
-                                                            <div class="post-wrap">
-                                                                <div class="post-thumb">
-                                                                    <a
-                                                                        href="https://blutube.themesawesome.com/video/of-were-the-ever-out-in-has-the-enterprises-sighed/">
-                                                                        <div class="play-button-hover">
-                                                                            <i class="fa fa-play play-button"></i>
-                                                                        </div>
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos6-535x355.jpg"
-                                                                            alt="Of were the ever out in has the enterprises sighed."
+                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos9-535x355.jpg"
+                                                                            alt="Produce or cost. Into had because"
                                                                             data-no-retina />
                                                                     </a>
                                                                 </div>
@@ -3279,26 +2645,41 @@
                                                                                 Rilley</a></span>
                                                                     </div>
                                                                     <div class="post-title">
-                                                                        <h4><a
-                                                                                href="https://blutube.themesawesome.com/video/of-were-the-ever-out-in-has-the-enterprises-sighed/">Of
-                                                                                were the ever out in has the enterprises
-                                                                                sighed.</a></h4>
-                                                                        <span class="views">127 Views</span>
+                                                                        <h4> <a class="headerVideoLink" href="#video1"
+                                                                                target="_blank"
+                                                                                class="popup-modal">Produce
+                                                                                or cost. Into had because</a></h4>
+                                                                        <span class="views">222 Views</span>
                                                                         <span class="hours">5 months ago</span>
                                                                     </div>
                                                                 </div>
+                                                            </div>
+
+                                                            <!-- <a class="headerVideoLink" href="#video1" target="_blank"
+                                                                class="popup-modal">
+                                                                Watch Our Video
+                                                            </a> -->
+
+
+                                                            <div id="video4"
+                                                                class="mfp-hide embed-responsive embed-responsive-21by9 headerPopup">
+                                                                <iframe width="560" height="315"
+                                                                    src="https://www.youtube.com/embed/IfrfJn_-24g"
+                                                                    title="YouTube video player" frameborder="0"
+                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                                    allowfullscreen></iframe>
                                                             </div>
                                                         </div>
                                                         <div class="video-item swiper-slide">
                                                             <div class="post-wrap">
                                                                 <div class="post-thumb">
-                                                                    <a
-                                                                        href="https://blutube.themesawesome.com/video/i-subdued-fate-it-finger/">
+                                                                    <a class="headerVideoLink" href="#video1"
+                                                                        target="_blank" class="popup-modal">
                                                                         <div class="play-button-hover">
                                                                             <i class="fa fa-play play-button"></i>
                                                                         </div>
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos7-535x355.jpg"
-                                                                            alt="I subdued fate it finger."
+                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos9-535x355.jpg"
+                                                                            alt="Produce or cost. Into had because"
                                                                             data-no-retina />
                                                                     </a>
                                                                 </div>
@@ -3311,47 +2692,32 @@
                                                                                 Rilley</a></span>
                                                                     </div>
                                                                     <div class="post-title">
-                                                                        <h4><a
-                                                                                href="https://blutube.themesawesome.com/video/i-subdued-fate-it-finger/">I
-                                                                                subdued fate it finger.</a></h4>
-                                                                        <span class="views">128 Views</span>
+                                                                        <h4> <a class="headerVideoLink" href="#video1"
+                                                                                target="_blank"
+                                                                                class="popup-modal">Produce
+                                                                                or cost. Into had because</a></h4>
+                                                                        <span class="views">222 Views</span>
                                                                         <span class="hours">5 months ago</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="video-item swiper-slide">
-                                                            <div class="post-wrap">
-                                                                <div class="post-thumb">
-                                                                    <a
-                                                                        href="https://blutube.themesawesome.com/video/release-clean-in-anyone-parts-sure-the-of-around-was/">
-                                                                        <div class="play-button-hover">
-                                                                            <i class="fa fa-play play-button"></i>
-                                                                        </div>
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos8-535x355.jpg"
-                                                                            alt="Release clean in anyone parts sure the of around was."
-                                                                            data-no-retina />
-                                                                    </a>
-                                                                </div>
-                                                                <div class="post-content">
-                                                                    <div class="post-author clearfix">
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp-150x150.jpg"
-                                                                            data-no-retina alt="John Doe">
-                                                                        <span><a
-                                                                                href="https://blutube.themesawesome.com/author/jhon_doe/">John
-                                                                                Doe</a></span>
-                                                                    </div>
-                                                                    <div class="post-title">
-                                                                        <h4><a
-                                                                                href="https://blutube.themesawesome.com/video/release-clean-in-anyone-parts-sure-the-of-around-was/">Release
-                                                                                clean in anyone parts sure the of around
-                                                                                was.</a></h4>
-                                                                        <span class="views">198 Views</span>
-                                                                        <span class="hours">5 months ago</span>
-                                                                    </div>
-                                                                </div>
+
+                                                            <!-- <a class="headerVideoLink" href="#video1" target="_blank"
+                                                                class="popup-modal">
+                                                                Watch Our Video
+                                                            </a> -->
+
+
+                                                            <div id="video5"
+                                                                class="mfp-hide embed-responsive embed-responsive-21by9 headerPopup">
+                                                                <iframe width="560" height="315"
+                                                                    src="https://www.youtube.com/embed/IfrfJn_-24g"
+                                                                    title="YouTube video player" frameborder="0"
+                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                                    allowfullscreen></iframe>
                                                             </div>
                                                         </div>
+
                                                     </div>
                                                 </div>
                                                 <div class="swiper-pagination"></div>
@@ -3399,7 +2765,9 @@
                         </div>
                     </div>
                 </section>
-                <section
+
+
+                <!-- <section
                     class="elementor-section elementor-top-section elementor-element elementor-element-8d80040 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
                     data-id="8d80040" data-element_type="section">
                     <div class="elementor-container elementor-column-gap-no">
@@ -3509,7 +2877,8 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> -->
+
             </div>
         </div>
 
@@ -3522,8 +2891,7 @@
                                 <div id="custom_html-2" class="widget_text widget-footer widget_custom_html">
                                     <div class="textwidget custom-html-widget"><a
                                             href="https://blutube.themesawesome.com/">
-                                            <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/05/logo-blutube-35.png"
-                                                alt="Footer Logo" />
+                                            <img src="img/logo.png" alt="Footer Logo" />
                                         </a>
                                         <p style="margin-top: 20px;">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta
@@ -3778,8 +3146,7 @@
                         <div class="footer-logo">
                             <div class="foot-logo logo-image">
                                 <a href="https://blutube.themesawesome.com/">
-                                    <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/05/logo-blutube-25.png"
-                                        alt="Blutube" />
+                                    <img src="img/logo.png" alt="Blutube" />
                                 </a>
                             </div>
                         </div>
@@ -3873,6 +3240,28 @@
         id='e-sticky-js'></script>
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
         data-cf-beacon='{"rayId":"6902984ebcf80fda","token":"7f4155e9fed34ca59b0f8fb061d2abba","version":"2021.8.1","si":10}'></script>
+
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/plugins.js"></script>
+
+
+    <script type="text/javascript">//<![CDATA[
+
+
+
+        $(document).ready(function () {
+            $('.headerVideoLink').magnificPopup({
+                type: 'inline',
+                midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+            });
+
+        });
+
+
+
+//]]></script>
+
 </body>
 
 </html>
