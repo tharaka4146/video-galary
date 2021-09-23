@@ -40,9 +40,7 @@
     <link rel='stylesheet' id='blutube-thaw-grid-css'
         href='https://blutube.themesawesome.com/wp-content/themes/blutube/css/thaw-grid.css' type='text/css'
         media='all' />
-    <link rel='stylesheet' id='blutube-style-css'
-        href='https://blutube.themesawesome.com/wp-content/themes/blutube/style.css?ver=5.8.1' type='text/css'
-        media='all' />
+    <link rel='stylesheet' id='blutube-style-css' href='css/style.css' type='text/css' media='all' />
     <link rel='stylesheet' id='blutube-style-responsive-css'
         href='https://blutube.themesawesome.com/wp-content/themes/blutube/css/responsive.css?ver=5.8.1' type='text/css'
         media='all' />
@@ -418,13 +416,13 @@
         }
 
         /* latin */
-        @font-face {
+        /* @font-face {
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 400;
             src: url(/fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
             unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-        }
+        } */
 
         /* devanagari */
         @font-face {
@@ -445,13 +443,13 @@
         }
 
         /* latin */
-        @font-face {
+        /* @font-face {
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 500;
             src: url(/fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');
             unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-        }
+        } */
 
         /* devanagari */
         @font-face {
@@ -472,13 +470,13 @@
         }
 
         /* latin */
-        @font-face {
+        /* @font-face {
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 600;
             src: url(/fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
             unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-        }
+        } */
 
         /* devanagari */
         @font-face {
@@ -499,13 +497,13 @@
         }
 
         /* latin */
-        @font-face {
+        /* @font-face {
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 700;
             src: url(/fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');
             unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-        }
+        } */
 
         /* devanagari */
         @font-face {
@@ -1988,7 +1986,7 @@
 
     <style id="compiled-css" type="text/css">
         .headerPopup {
-            width: 50%;
+            width: 90%;
             margin: 0 auto;
         }
 
@@ -1997,8 +1995,18 @@
             margin: 0 auto;
         }
 
+        @media screen and (min-width: 600px) {
+
+            .headerPopup {
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+
         /* EOS */
     </style>
+
+
 
     <!-- custom css -->
     <style>
@@ -2011,14 +2019,21 @@
         .elementor-43 .elementor-element.elementor-element-e6f7a1c>.elementor-motion-effects-container>.elementor-motion-effects-layer {
             background-color: rgba(255, 255, 255, 0);
         }
+
+        .play-button-hover {
+            background-color: #ff0000b5;
+            padding: 20px 30px 20px 30px;
+        }
     </style>
 
 </head>
 
-<body id="body"
-    class="home page-template page-template-elementor_header_footer page page-id-43 elementor-default elementor-template-full-width elementor-kit-72 elementor-page elementor-page-43">
-    <div id="main-wrapper" class="main-wrapper clearfix">
+<body id="body" class="archive author author-creator2 author-101255 elementor-default elementor-kit-72">
 
+
+    <div id="main-wrapper" class="main-wrapper clearfix">
+        <!-- Header
+	============================================= -->
         <header class="header header-custom clearfix">
             <div class="header-left text-left clearfix">
                 <div class="head-item logo-image logo-head">
@@ -2064,774 +2079,215 @@
                 </nav>
             </div>
             <!-- <div class="header-right text-right clearfix ">
-                <div class="header-info-wrapper">
-                    <div class="search-wrap head-info-item">
-                        <form method="get" class="searchform" action="https://blutube.themesawesome.com/" role="search">
-                            <input type="search" class="field" name="s" value="" id="s" placeholder="Search Video..." />
-                            <input type="hidden" name="post_type" value="blutube-video" />
-                            <button type="submit" class="submit search-button open" value=""><i
-                                    class="fa fa-search"></i></button>
-                        </form>
+            <div class="header-info-wrapper">
+                <div class="search-wrap head-info-item">
+                    <form method="get" class="searchform" action="https://blutube.themesawesome.com/" role="search">
+                        <input type="search" class="field" name="s" value="" id="s" placeholder="Search Video..." />
+                        <input type="hidden" name="post_type" value="blutube-video" />
+                        <button type="submit" class="submit search-button open" value=""><i
+                                class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="call-btn head-info-item">
+                    <div class="item-wrapper">
+                        <a href="https://blutube.themesawesome.com/myaccount" class="button-basic add-video"><i
+                                class="fa fa-video-camera"></i> Upload</a>
+                        <a href="https://blutube.themesawesome.com/myaccount" class="sign-log">Sign In</a>
                     </div>
-                    <div class="call-btn head-info-item">
-                        <div class="item-wrapper">
-                            <a href="https://blutube.themesawesome.com/myaccount" class="button-basic add-video"><i
-                                    class="fa fa-video-camera"></i> Upload</a>
-                            <a href="https://blutube.themesawesome.com/myaccount" class="sign-log">Sign In</a>
+                </div>
+            </div>
+        </div> -->
+        </header>
+
+
+        <div id="content" class="single-category-page author-page">
+            <div class="container">
+                <div class="author-profile clearfix">
+                    <div class="image-author">
+                        <img class="author" src="img/speakers/pp2-1-150x150.jpg" alt="Jimmy Rilley" data-no-retina />
+                    </div>
+                    <div class="about-category author">
+                        <h1>Jimmy Rilley</h1>
+                        <p>So employed then tone one narrow subordinates is impenetrable and of over in bright on
+                            anywhere were to it to instance, show in will. The gm of who treat. Text and at seemed like
+                            and one fundamental it networks. Of human by their during in the blind big to bulletin
+                            pointing some were indeed absolutely to of that follow time. He should thoroughly, town to
+                            agency, these far the into entirely phase nice a by right I now get it dresses of narrow
+                            briefs day law, he house. Mr. Schemes graduate. Deference fundamental; Employees, and if
+                            cache of maintain disguised.</p>
+                        <div class="author-social">
+                            <ul class="social-profiles">
+                                <li class="instagram">
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="facebook">
+                                    <a href="#">
+                                        <i class="fa fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="twitter">
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </div> -->
-        </header>
 
-        <div data-elementor-type="wp-page" data-elementor-id="43" class="elementor elementor-43"
-            data-elementor-settings="[]">
-            <div class="elementor-section-wrap">
-                <section
-                    class="elementor-section elementor-top-section elementor-element elementor-element-4cb5c31 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-                    data-id="4cb5c31" data-element_type="section">
-                    <div class="elementor-container elementor-column-gap-no">
-                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6171d78"
-                            data-id="6171d78" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                                <div class="elementor-element elementor-element-3bec862 elementor-widget elementor-widget-blutube-video-block"
-                                    data-id="3bec862" data-element_type="widget"
-                                    data-widget_type="blutube-video-block.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="video-wrap style-3 ele rand-4430">
-                                            <div class="swiper-container">
+                <!-- BLOG START
+			============================================= -->
+                <div class="blog clearfix">
 
-                                                <div class="swiper-wrapper">
+                    <section
+                        class="elementor-section elementor-top-section elementor-element elementor-element-e6f7a1c elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                        data-id="e6f7a1c" data-element_type="section"
+                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                        <div class="elementor-container elementor-column-gap-no">
+                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-75a408e"
+                                data-id="75a408e" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <section
+                                        class="elementor-section elementor-inner-section elementor-element elementor-element-b807bf2 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                                        data-id="b807bf2" data-element_type="section">
+                                        <div class="elementor-container elementor-column-gap-no">
+                                            <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-24ec3f8"
+                                                data-id="24ec3f8" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
 
-                                                    <!-- Slide elements -->
-                                                    <div class="video-item swiper-slide"
-                                                        style="background-image: url(img/slideshow/1.png); background-size: cover;  min-height: 100vh;">
-
-                                                        <!-- <video autoplay muted loop style="height: 150%; width: 150%; ">
-                                                            <source src="video.mp4" type="video/mp4">
-                                                        </video> -->
-
-                                                        <h1 id="welcome"
-                                                            style="text-align: center; position: relative; z-index: 999; margin-top: 200px; padding: 5%; font-size: 500%;">
-                                                            video galary name goes here</h1>
-
-
-                                                        <div class="inner-img-video">
-
-
-                                                            <div class="tag-wrapper meta-top">
-                                                                <a class="headerVideoLink" href="#video1"
-                                                                    target="_blank" class="popup-modal">
-                                                                    Watch Now
-                                                                </a>
+                                                    <div class="elementor-element elementor-element-e456458 elementor-widget__width-initial elementor-widget elementor-widget-spacer"
+                                                        data-id="e456458" data-element_type="widget"
+                                                        data-widget_type="spacer.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="elementor-spacer">
+                                                                <div class="elementor-spacer-inner"></div>
                                                             </div>
-
-                                                            <h1 class="video-title">
-                                                                DevZone Session 01
-                                                            </h1>
-
-                                                            <div class="excerpt-video">
-                                                                A java Workshop</div>
-
-                                                            <div class="author-wrapper-vid">
-                                                                <figure class="author-ava">
-                                                                    <a href="speaker.html">
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp2-1-150x150.jpg"
-                                                                            alt="Jimmy Rilley" data-no-retina></a>
-                                                                </figure>
-                                                                <span class="vcard"><a href="speaker.html">
-                                                                        Jimmy Rilley</a></span>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <div class="overlay-hero"></div>
-                                                    </div>
-
-                                                    <div class="video-item swiper-slide"
-                                                        style="background-image: url(img/slideshow/2.png); background-size: cover;  min-height: 100vh;">
-
-                                                        <!-- <video autoplay muted loop style="height: 150%; width: 150%; ">
-                                                            <source src="video.mp4" type="video/mp4">
-                                                        </video> -->
-
-                                                        <h1 id="welcome"
-                                                            style="text-align: center; position: relative; z-index: 999; margin-top: 200px; padding: 5%; font-size: 500%;">
-                                                            video galary name goes here</h1>
-
-
-                                                        <div class="inner-img-video">
-
-
-                                                            <div class="tag-wrapper meta-top">
-                                                                <a class="headerVideoLink" href="#video2"
-                                                                    target="_blank" class="popup-modal">
-                                                                    Watch Now
-                                                                </a>
-                                                            </div>
-
-                                                            <h1 class="video-title">
-                                                                DevZone Session 02
-                                                            </h1>
-
-                                                            <div class="excerpt-video">
-                                                                A java Workshop</div>
-
-                                                            <div class="author-wrapper-vid">
-                                                                <figure class="author-ava">
-                                                                    <a
-                                                                        href="https://blutube.themesawesome.com/author/creator2/">
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp2-1-150x150.jpg"
-                                                                            alt="Jimmy Rilley" data-no-retina></a>
-                                                                </figure>
-                                                                <span class="vcard"><a
-                                                                        href="https://blutube.themesawesome.com/author/creator2/">
-                                                                        Jimmy Rilley</a></span>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <div class="overlay-hero"></div>
-                                                    </div>
-                                                    <div class="video-item swiper-slide"
-                                                        style="background-image: url(img/slideshow/3.jpg); background-size: cover;  min-height: 100vh;">
-
-                                                        <!-- <video autoplay muted loop style="height: 150%; width: 150%; ">
-                                                        <source src="video.mp4" type="video/mp4">
-                                                    </video> -->
-
-                                                        <h1 id="welcome"
-                                                            style="text-align: center; position: relative; z-index: 999; margin-top: 200px; padding: 5%; font-size: 500%;">
-                                                            video galary name goes here</h1>
-
-
-                                                        <div class="inner-img-video">
-
-
-                                                            <div class="tag-wrapper meta-top">
-                                                                <a class="headerVideoLink" href="#video3"
-                                                                    target="_blank" class="popup-modal">
-                                                                    Watch Now
-                                                                </a>
-                                                            </div>
-
-                                                            <h1 class="video-title">
-                                                                DevZone Session 03
-                                                            </h1>
-
-                                                            <div class="excerpt-video">
-                                                                A java Workshop</div>
-
-                                                            <div class="author-wrapper-vid">
-                                                                <figure class="author-ava">
-                                                                    <a
-                                                                        href="https://blutube.themesawesome.com/author/creator2/">
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp2-1-150x150.jpg"
-                                                                            alt="Jimmy Rilley" data-no-retina></a>
-                                                                </figure>
-                                                                <span class="vcard"><a
-                                                                        href="https://blutube.themesawesome.com/author/creator2/">
-                                                                        Jimmy Rilley</a></span>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <div class="overlay-hero"></div>
-                                                    </div>
-                                                    <div class="video-item swiper-slide"
-                                                        style="background-image: url(img/slideshow/4.jpg); background-size: cover;  min-height: 100vh;">
-
-                                                        <!-- <video autoplay muted loop style="height: 150%; width: 150%; ">
-                                                    <source src="video.mp4" type="video/mp4">
-                                                </video> -->
-
-                                                        <h1 id="welcome"
-                                                            style="text-align: center; position: relative; z-index: 999; margin-top: 200px; padding: 5%; font-size: 500%;">
-                                                            video galary name goes here</h1>
-
-
-                                                        <div class="inner-img-video">
-
-
-                                                            <div class="tag-wrapper meta-top">
-                                                                <a class="headerVideoLink" href="#video4"
-                                                                    target="_blank" class="popup-modal">
-                                                                    Watch Now
-                                                                </a>
-                                                            </div>
-
-                                                            <h1 class="video-title">
-                                                                DevZone Session 04
-                                                            </h1>
-
-                                                            <div class="excerpt-video">
-                                                                A java Workshop</div>
-
-                                                            <div class="author-wrapper-vid">
-                                                                <figure class="author-ava">
-                                                                    <a
-                                                                        href="https://blutube.themesawesome.com/author/creator2/">
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp2-1-150x150.jpg"
-                                                                            alt="Jimmy Rilley" data-no-retina></a>
-                                                                </figure>
-                                                                <span class="vcard"><a
-                                                                        href="https://blutube.themesawesome.com/author/creator2/">
-                                                                        Jimmy Rilley</a></span>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <div class="overlay-hero"></div>
-                                                    </div>
-                                                    <div class="video-item swiper-slide"
-                                                        style="background-image: url(img/slideshow/5.png); background-size: cover;  min-height: 100vh;">
-
-                                                        <!-- <video autoplay muted loop style="height: 150%; width: 150%; ">
-                                                <source src="video.mp4" type="video/mp4">
-                                            </video> -->
-
-                                                        <h1 id="welcome"
-                                                            style="text-align: center; position: relative; z-index: 999; margin-top: 200px; padding: 5%; font-size: 500%;">
-                                                            video galary name goes here</h1>
-
-
-                                                        <div class="inner-img-video">
-
-
-                                                            <div class="tag-wrapper meta-top">
-                                                                <a class="headerVideoLink" href="#video5"
-                                                                    target="_blank" class="popup-modal">
-                                                                    Watch Now
-                                                                </a>
-                                                            </div>
-
-                                                            <h1 class="video-title">
-                                                                DevZone Session 05
-                                                            </h1>
-
-                                                            <div class="excerpt-video">
-                                                                A java Workshop</div>
-
-                                                            <div class="author-wrapper-vid">
-                                                                <figure class="author-ava">
-                                                                    <a
-                                                                        href="https://blutube.themesawesome.com/author/creator2/">
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp2-1-150x150.jpg"
-                                                                            alt="Jimmy Rilley" data-no-retina></a>
-                                                                </figure>
-                                                                <span class="vcard"><a
-                                                                        href="https://blutube.themesawesome.com/author/creator2/">
-                                                                        Jimmy Rilley</a></span>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <div class="overlay-hero"></div>
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="swiper-pagination"></div>
-                                                <div class="prev-next-wrap">
-                                                    <div class="prev-next-wrap-inner">
-                                                        <div class="swiper-button-next"></div>
-                                                        <div class="swiper-button-prev"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <script>
-                                            (function ($) {
-
-                                                $(document).ready(function () {
-
-                                                    var swiper = new Swiper('.video-wrap.rand-4430 .swiper-container', {
-                                                        slidesPerView: 1,
-                                                        spaceBetween: 0,
-                                                        effect: 'fade',
-                                                        fadeEffect: {
-                                                            crossFade: true
-                                                        },
-                                                        loop: true,
-                                                        pagination: {
-                                                            el: '.video-wrap.rand-4430 .swiper-pagination',
-                                                            clickable: true,
-                                                        },
-                                                        navigation: {
-                                                            nextEl: '.video-wrap.rand-4430 .swiper-button-next',
-                                                            prevEl: '.video-wrap.rand-4430 .swiper-button-prev',
-                                                        },
-                                                        autoplay: {
-                                                            delay: 4000,
-                                                            disableOnInteraction: false,
-                                                        },
-                                                    });
-                                                });
-
-                                            })(jQuery);
-                                        </script>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section
-                    class="elementor-section elementor-top-section elementor-element elementor-element-e6f7a1c elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-                    data-id="e6f7a1c" data-element_type="section"
-                    data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                    <div class="elementor-container elementor-column-gap-no">
-                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-75a408e"
-                            data-id="75a408e" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                                <section
-                                    class="elementor-section elementor-inner-section elementor-element elementor-element-b807bf2 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-                                    data-id="b807bf2" data-element_type="section">
-                                    <div class="elementor-container elementor-column-gap-no">
-                                        <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-24ec3f8"
-                                            data-id="24ec3f8" data-element_type="column">
-                                            <div class="elementor-widget-wrap elementor-element-populated">
-                                                <div class="elementor-element elementor-element-046caf3 elementor-widget elementor-widget-heading"
-                                                    data-id="046caf3" data-element_type="widget"
-                                                    data-widget_type="heading.default">
-                                                    <div class="elementor-widget-container">
-                                                        <h2 class="elementor-heading-title elementor-size-default">
-                                                            DevZone videos</h2>
-                                                    </div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-e456458 elementor-widget__width-initial elementor-widget elementor-widget-spacer"
-                                                    data-id="e456458" data-element_type="widget"
-                                                    data-widget_type="spacer.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-spacer">
-                                                            <div class="elementor-spacer-inner"></div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </section>
+                                    </section>
 
-                                <div class="elementor-element elementor-element-58eb7f9 elementor-widget elementor-widget-blutube-video-block"
-                                    data-id="58eb7f9" data-element_type="widget"
-                                    data-widget_type="blutube-video-block.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="post-loop">
-                                            <div class="video-wrap style-5 ele rand-2752">
-                                                <div class="swiper-container">
-                                                    <div class="swiper-wrapper">
+                                    <div class="elementor-element elementor-element-58eb7f9 elementor-widget elementor-widget-blutube-video-block"
+                                        data-id="58eb7f9" data-element_type="widget"
+                                        data-widget_type="blutube-video-block.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="post-loop">
+                                                <div class="video-wrap style-5 ele rand-2752">
+                                                    <div class="swiper-container">
+                                                        <div class="swiper-wrapper">
 
-                                                        <div class="video-item swiper-slide">
-                                                            <div class="post-wrap">
-                                                                <div class="post-thumb">
-                                                                    <a class="headerVideoLink" href="#video1"
-                                                                        target="_blank" class="popup-modal">
-                                                                        <div class="play-button-hover">
-                                                                            <i class="fa fa-play play-button"></i>
+                                                            <div class="video-item swiper-slide">
+                                                                <div class="post-wrap">
+                                                                    <div class="post-thumb">
+                                                                        <a class="headerVideoLink" href="#video1"
+                                                                            target="_blank" class="popup-modal">
+                                                                            <div class="play-button-hover">
+                                                                                <i class="fa fa-play play-button"></i>
+                                                                            </div>
+                                                                            <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos9-535x355.jpg"
+                                                                                alt="Produce or cost. Into had because"
+                                                                                data-no-retina style="height: auto;" />
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="post-content">
+
+                                                                        <div class="post-title">
+
+                                                                            <h4> <a class="headerVideoLink"
+                                                                                    href="#video1" target="_blank"
+                                                                                    class="popup-modal">Produce
+                                                                                    or cost. Into had because</a></h4>
+                                                                            <span class="views">222 Views</span>
+                                                                            <span class="hours">5 months ago</span>
+
                                                                         </div>
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos9-535x355.jpg"
-                                                                            alt="Produce or cost. Into had because"
-                                                                            data-no-retina />
-                                                                    </a>
-                                                                </div>
-                                                                <div class="post-content">
-                                                                    <div class="post-author clearfix">
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp2-1-150x150.jpg"
-                                                                            data-no-retina alt="Jimmy Rilley">
-                                                                        <span>
-                                                                            <a href="speaker.html">
-                                                                                Jimmy Rilley
-                                                                            </a>
-                                                                        </span>
-                                                                    </div>
-                                                                    <div class="post-title">
-                                                                        <h4> <a class="headerVideoLink" href="#video1"
-                                                                                target="_blank"
-                                                                                class="popup-modal">Produce
-                                                                                or cost. Into had because</a></h4>
-                                                                        <span class="views">222 Views</span>
-                                                                        <span class="hours">5 months ago</span>
                                                                     </div>
                                                                 </div>
-                                                            </div>
 
-                                                            <!-- <a class="headerVideoLink" href="#video1" target="_blank"
+                                                                <!-- <a class="headerVideoLink" href="#video1" target="_blank"
                                                                 class="popup-modal">
                                                                 Watch Our Video
-                                                            </a> -->
+                                                                </a> -->
 
-                                                            <div id="video1"
-                                                                class="mfp-hide embed-responsive embed-responsive-21by9 headerPopup">
+                                                                <div id="video1"
+                                                                    class="mfp-hide embed-responsive embed-responsive-21by9 headerPopup">
 
-                                                                <!-- <iframe width="560" height="315"
+                                                                    <!-- <iframe width="560" height="315"
                                                                     src="https://www.youtube.com/embed/IfrfJn_-24g"
                                                                     title="YouTube video player" frameborder="0"
                                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                                                     allowfullscreen></iframe> -->
 
-                                                                <iframe width="560" height="315"
-                                                                    src="https://www.youtube.com/embed/videoseries?list=PLIV1P6OrbqH_E9FAzNtyYMU7oGBjXXACJ"
-                                                                    title="YouTube video player" frameborder="0"
-                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                                    allowfullscreen></iframe>
+                                                                    <iframe width="560" height="315"
+                                                                        src="https://www.youtube.com/embed/videoseries?list=PLIV1P6OrbqH_E9FAzNtyYMU7oGBjXXACJ"
+                                                                        title="YouTube video player" frameborder="0"
+                                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                                        allowfullscreen></iframe>
 
+                                                                </div>
                                                             </div>
+
+
                                                         </div>
-
-                                                        <div class="video-item swiper-slide">
-                                                            <div class="post-wrap">
-                                                                <div class="post-thumb">
-                                                                    <a class="headerVideoLink" href="#video1"
-                                                                        target="_blank" class="popup-modal">
-                                                                        <div class="play-button-hover">
-                                                                            <i class="fa fa-play play-button"></i>
-                                                                        </div>
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos9-535x355.jpg"
-                                                                            alt="Produce or cost. Into had because"
-                                                                            data-no-retina />
-                                                                    </a>
-                                                                </div>
-                                                                <div class="post-content">
-                                                                    <div class="post-author clearfix">
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp2-1-150x150.jpg"
-                                                                            data-no-retina alt="Jimmy Rilley">
-                                                                        <span><a
-                                                                                href="https://blutube.themesawesome.com/author/creator2/">Jimmy
-                                                                                Rilley</a></span>
-                                                                    </div>
-                                                                    <div class="post-title">
-                                                                        <h4> <a class="headerVideoLink" href="#video1"
-                                                                                target="_blank"
-                                                                                class="popup-modal">Produce
-                                                                                or cost. Into had because</a></h4>
-                                                                        <span class="views">222 Views</span>
-                                                                        <span class="hours">5 months ago</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <!-- <a class="headerVideoLink" href="#video1" target="_blank"
-                                                                class="popup-modal">
-                                                                Watch Our Video
-                                                            </a> -->
-
-
-                                                            <div id="video2"
-                                                                class="mfp-hide embed-responsive embed-responsive-21by9 headerPopup">
-                                                                <iframe width="560" height="315"
-                                                                    src="https://www.youtube.com/embed/IfrfJn_-24g"
-                                                                    title="YouTube video player" frameborder="0"
-                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                                    allowfullscreen></iframe>
-                                                            </div>
-                                                        </div>
-                                                        <div class="video-item swiper-slide">
-                                                            <div class="post-wrap">
-                                                                <div class="post-thumb">
-                                                                    <a class="headerVideoLink" href="#video1"
-                                                                        target="_blank" class="popup-modal">
-                                                                        <div class="play-button-hover">
-                                                                            <i class="fa fa-play play-button"></i>
-                                                                        </div>
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos9-535x355.jpg"
-                                                                            alt="Produce or cost. Into had because"
-                                                                            data-no-retina />
-                                                                    </a>
-                                                                </div>
-                                                                <div class="post-content">
-                                                                    <div class="post-author clearfix">
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp2-1-150x150.jpg"
-                                                                            data-no-retina alt="Jimmy Rilley">
-                                                                        <span><a
-                                                                                href="https://blutube.themesawesome.com/author/creator2/">Jimmy
-                                                                                Rilley</a></span>
-                                                                    </div>
-                                                                    <div class="post-title">
-                                                                        <h4> <a class="headerVideoLink" href="#video1"
-                                                                                target="_blank"
-                                                                                class="popup-modal">Produce
-                                                                                or cost. Into had because</a></h4>
-                                                                        <span class="views">222 Views</span>
-                                                                        <span class="hours">5 months ago</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <!-- <a class="headerVideoLink" href="#video1" target="_blank"
-                                                                class="popup-modal">
-                                                                Watch Our Video
-                                                            </a> -->
-
-
-                                                            <div id="video3"
-                                                                class="mfp-hide embed-responsive embed-responsive-21by9 headerPopup">
-                                                                <iframe width="560" height="315"
-                                                                    src="https://www.youtube.com/embed/IfrfJn_-24g"
-                                                                    title="YouTube video player" frameborder="0"
-                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                                    allowfullscreen></iframe>
-                                                            </div>
-                                                        </div>
-                                                        <div class="video-item swiper-slide">
-                                                            <div class="post-wrap">
-                                                                <div class="post-thumb">
-                                                                    <a class="headerVideoLink" href="#video1"
-                                                                        target="_blank" class="popup-modal">
-                                                                        <div class="play-button-hover">
-                                                                            <i class="fa fa-play play-button"></i>
-                                                                        </div>
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos9-535x355.jpg"
-                                                                            alt="Produce or cost. Into had because"
-                                                                            data-no-retina />
-                                                                    </a>
-                                                                </div>
-                                                                <div class="post-content">
-                                                                    <div class="post-author clearfix">
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp2-1-150x150.jpg"
-                                                                            data-no-retina alt="Jimmy Rilley">
-                                                                        <span><a
-                                                                                href="https://blutube.themesawesome.com/author/creator2/">Jimmy
-                                                                                Rilley</a></span>
-                                                                    </div>
-                                                                    <div class="post-title">
-                                                                        <h4> <a class="headerVideoLink" href="#video1"
-                                                                                target="_blank"
-                                                                                class="popup-modal">Produce
-                                                                                or cost. Into had because</a></h4>
-                                                                        <span class="views">222 Views</span>
-                                                                        <span class="hours">5 months ago</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <!-- <a class="headerVideoLink" href="#video1" target="_blank"
-                                                                class="popup-modal">
-                                                                Watch Our Video
-                                                            </a> -->
-
-
-                                                            <div id="video4"
-                                                                class="mfp-hide embed-responsive embed-responsive-21by9 headerPopup">
-                                                                <iframe width="560" height="315"
-                                                                    src="https://www.youtube.com/embed/IfrfJn_-24g"
-                                                                    title="YouTube video player" frameborder="0"
-                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                                    allowfullscreen></iframe>
-                                                            </div>
-                                                        </div>
-                                                        <div class="video-item swiper-slide">
-                                                            <div class="post-wrap">
-                                                                <div class="post-thumb">
-                                                                    <a class="headerVideoLink" href="#video1"
-                                                                        target="_blank" class="popup-modal">
-                                                                        <div class="play-button-hover">
-                                                                            <i class="fa fa-play play-button"></i>
-                                                                        </div>
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos9-535x355.jpg"
-                                                                            alt="Produce or cost. Into had because"
-                                                                            data-no-retina />
-                                                                    </a>
-                                                                </div>
-                                                                <div class="post-content">
-                                                                    <div class="post-author clearfix">
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp2-1-150x150.jpg"
-                                                                            data-no-retina alt="Jimmy Rilley">
-                                                                        <span><a
-                                                                                href="https://blutube.themesawesome.com/author/creator2/">Jimmy
-                                                                                Rilley</a></span>
-                                                                    </div>
-                                                                    <div class="post-title">
-                                                                        <h4> <a class="headerVideoLink" href="#video1"
-                                                                                target="_blank"
-                                                                                class="popup-modal">Produce
-                                                                                or cost. Into had because</a></h4>
-                                                                        <span class="views">222 Views</span>
-                                                                        <span class="hours">5 months ago</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <!-- <a class="headerVideoLink" href="#video1" target="_blank"
-                                                                class="popup-modal">
-                                                                Watch Our Video
-                                                            </a> -->
-
-
-                                                            <div id="video5"
-                                                                class="mfp-hide embed-responsive embed-responsive-21by9 headerPopup">
-                                                                <iframe width="560" height="315"
-                                                                    src="https://www.youtube.com/embed/IfrfJn_-24g"
-                                                                    title="YouTube video player" frameborder="0"
-                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                                    allowfullscreen></iframe>
-                                                            </div>
-                                                        </div>
-
                                                     </div>
+                                                    <div class="swiper-pagination"></div>
                                                 </div>
-                                                <div class="swiper-pagination"></div>
-                                            </div>
-                                            <script>
-                                                (function ($) {
+                                                <script>
+                                                    (function ($) {
 
-                                                    $(document).ready(function () {
+                                                        $(document).ready(function () {
 
-                                                        var swiper = new Swiper('.video-wrap.rand-2752 .swiper-container', {
-                                                            slidesPerView: 1,
-                                                            spaceBetween: 20,
-                                                            pagination: {
-                                                                el: '.video-wrap.rand-2752 .swiper-pagination',
-                                                                clickable: true,
-                                                            },
-                                                            breakpoints: {
-                                                                0: {
-                                                                    slidesPerView: 1,
-                                                                    spaceBetween: 20,
+                                                            var swiper = new Swiper('.video-wrap.rand-2752 .swiper-container', {
+                                                                slidesPerView: 1,
+                                                                spaceBetween: 20,
+                                                                pagination: {
+                                                                    el: '.video-wrap.rand-2752 .swiper-pagination',
+                                                                    clickable: true,
+                                                                },
+                                                                breakpoints: {
+                                                                    0: {
+                                                                        slidesPerView: 1,
+                                                                        spaceBetween: 20,
+
+                                                                    },
+
+                                                                    768: {
+                                                                        slidesPerView: 2,
+                                                                        spaceBetween: 20,
+
+                                                                    },
+
+                                                                    1025: {
+                                                                        slidesPerView: 4,
+                                                                        spaceBetween: 20,
+                                                                    },
 
                                                                 },
-
-                                                                768: {
-                                                                    slidesPerView: 2,
-                                                                    spaceBetween: 20,
-
-                                                                },
-
-                                                                1025: {
-                                                                    slidesPerView: 4,
-                                                                    spaceBetween: 20,
-                                                                },
-
-                                                            },
+                                                            });
                                                         });
-                                                    });
 
-                                                })(jQuery);
-                                            </script>
+                                                    })(jQuery);
+                                                </script>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
 
 
-                <!-- <section
-                    class="elementor-section elementor-top-section elementor-element elementor-element-8d80040 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-                    data-id="8d80040" data-element_type="section">
-                    <div class="elementor-container elementor-column-gap-no">
-                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3f2919c"
-                            data-id="3f2919c" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                                <section
-                                    class="elementor-section elementor-inner-section elementor-element elementor-element-e53fbdd elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-                                    data-id="e53fbdd" data-element_type="section">
-                                    <div class="elementor-container elementor-column-gap-no">
-                                        <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-9e93dba"
-                                            data-id="9e93dba" data-element_type="column">
-                                            <div class="elementor-widget-wrap elementor-element-populated">
-                                                <div class="elementor-element elementor-element-13d22cd elementor-widget elementor-widget-heading"
-                                                    data-id="13d22cd" data-element_type="widget"
-                                                    data-widget_type="heading.default">
-                                                    <div class="elementor-widget-container">
-                                                        <h2 class="elementor-heading-title elementor-size-default">Top
-                                                            Categories</h2>
-                                                    </div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-28f4334 elementor-widget__width-initial elementor-widget elementor-widget-spacer"
-                                                    data-id="28f4334" data-element_type="widget"
-                                                    data-widget_type="spacer.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-spacer">
-                                                            <div class="elementor-spacer-inner"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <div class="elementor-element elementor-element-a4ad962 elementor-widget elementor-widget-blutube-category-block"
-                                    data-id="a4ad962" data-element_type="widget"
-                                    data-widget_type="blutube-category-block.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="blutube-wrap-category row clearfix">
-                                            <div class="category-item column">
-                                                <div class="blutube-thumb">
-                                                    <a
-                                                        href="https://blutube.themesawesome.com/video-category/animation/">
-                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/05/c1-535x355.jpg"
-                                                            alt="Animation" data-no-retina>
-                                                        <div class="blutube-overlay"></div>
-                                                    </a>
-                                                </div>
-                                                <h4><a
-                                                        href="https://blutube.themesawesome.com/video-category/animation/">Animation</a>
-                                                </h4>
-                                            </div>
-                                            <div class="category-item column">
-                                                <div class="blutube-thumb">
-                                                    <a
-                                                        href="https://blutube.themesawesome.com/video-category/autos-vehicles/">
-                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/05/c15-535x355.jpg"
-                                                            alt="Autos &amp; Vehicles" data-no-retina>
-                                                        <div class="blutube-overlay"></div>
-                                                    </a>
-                                                </div>
-                                                <h4><a
-                                                        href="https://blutube.themesawesome.com/video-category/autos-vehicles/">Autos
-                                                        &amp; Vehicles</a></h4>
-                                            </div>
-                                            <div class="category-item column">
-                                                <div class="blutube-thumb">
-                                                    <a href="https://blutube.themesawesome.com/video-category/blog/">
-                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/05/c8-535x355.jpg"
-                                                            alt="Blog" data-no-retina>
-                                                        <div class="blutube-overlay"></div>
-                                                    </a>
-                                                </div>
-                                                <h4><a
-                                                        href="https://blutube.themesawesome.com/video-category/blog/">Blog</a>
-                                                </h4>
-                                            </div>
-                                            <div class="category-item column">
-                                                <div class="blutube-thumb">
-                                                    <a href="https://blutube.themesawesome.com/video-category/comedy/">
-                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/05/c5-535x355.jpg"
-                                                            alt="Comedy" data-no-retina>
-                                                        <div class="blutube-overlay"></div>
-                                                    </a>
-                                                </div>
-                                                <h4><a
-                                                        href="https://blutube.themesawesome.com/video-category/comedy/">Comedy</a>
-                                                </h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-27e2647 elementor-align-center elementor-widget elementor-widget-button"
-                                    data-id="27e2647" data-element_type="widget" data-widget_type="button.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="elementor-button-wrapper">
-                                            <a href="https://blutube.themesawesome.com/categories/"
-                                                class="elementor-button-link elementor-button elementor-size-lg elementor-animation-sink"
-                                                role="button">
-                                                <span class="elementor-button-content-wrapper">
-                                                    <span class="elementor-button-text">View All Categories</span>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section> -->
+                </div>
+                <!-- BLOOG END -->
 
             </div>
         </div>
+
+
 
         <footer id="footer" class="footer clearfix">
             <div class="footer-wrapper">
@@ -3119,7 +2575,9 @@
             </div>
         </footer>
 
+
     </div>
+    <!-- MAIN WRAPPER END -->
 
     <link rel='stylesheet' id='e-animations-css'
         href='https://blutube.themesawesome.com/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.4.3'
