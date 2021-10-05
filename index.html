@@ -2095,6 +2095,14 @@
             float: right;
         }
 
+        .black {
+            opacity: 1;
+        }
+
+        .black2 {
+            width: fit-content;
+        }
+
         /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
         @media screen and (max-width: 600px) {
 
@@ -2113,6 +2121,15 @@
 
             .widget-footer .title:after {
                 background-color: #dc5959 !important;
+            }
+
+            .black {
+                opacity: 0;
+                width: min-content;
+            }
+
+            .black2 {
+                width: min-content;
             }
 
         }
@@ -2194,7 +2211,7 @@
                                                         </video> -->
                                                         <center>
                                                             <h1 id="welcome" class="welcome"
-                                                                style="color: #47BCCC; border: 2px solid white; padding:0 !important; width: fit-content; text-align:center">
+                                                                style="color: #47BCCC; border: 2px solid white; padding:0 !important; width:fit-content; text-align:center">
                                                                 codeSolveur Video vault
                                                             </h1>
                                                         </center>
@@ -2494,9 +2511,9 @@
                                                     data-id="046caf3" data-element_type="widget"
                                                     data-widget_type="heading.default">
                                                     <div class="elementor-widget-container">
-                                                        <h2 class="elementor-heading-title elementor-size-default"
-                                                            style="background: white; color: black; width: fit-content;">
-                                                            CodeSolveur videos <span
+                                                        <h2 class="elementor-heading-title elementor-size-default black2"
+                                                            style="background: white; color: black;">
+                                                            CodeSolveur videos <span class="black"
                                                                 style="background:black">&nbsp;</span>&nbsp;</h2>
                                                     </div>
                                                 </div>
@@ -2788,9 +2805,9 @@
                                                     data-id="046caf3" data-element_type="widget"
                                                     data-widget_type="heading.default">
                                                     <div class="elementor-widget-container">
-                                                        <h2 class="elementor-heading-title elementor-size-default"
-                                                            style="background: white; color: black; width: fit-content;">
-                                                            CodeSolveur playlists <span
+                                                        <h2 class="elementor-heading-title elementor-size-default black2"
+                                                            style="background: white; color: black;">
+                                                            CodeSolveur playlists<span class="black"
                                                                 style="background:black">&nbsp;</span>&nbsp;</h2>
                                                     </div>
                                                 </div>
