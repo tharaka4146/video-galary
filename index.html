@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <title>CodeSolveur video vault</title>
+    <title>codeSolveur video vault</title>
     <link rel="icon" href="img/logo/ieee-logo.png" type="image/gif">
 
     <link rel='stylesheet' href='css/bootstrap.css'>
@@ -1994,19 +1994,23 @@
 
 
         .welcome {
-            margin-top: 250px !important;
+            margin-top: 350px !important;
             text-align: center !important;
             position: relative !important;
             z-index: 999 !important;
             padding: 5% !important;
             font-size: 350% !important;
-
         }
 
         @media screen and (min-width: 600px) {
 
+            .headerPopup {
+                width: 50%;
+                margin: 0 auto;
+            }
+
             .welcome {
-                margin-top: 200px;
+                margin-top: 300px !important;
                 text-align: center !important;
                 position: relative !important;
                 z-index: 999 !important;
@@ -2052,7 +2056,18 @@
                 width: 50%;
                 margin: 0 auto;
             }
+
+            .welcome {
+                margin-top: 300px !important;
+                text-align: center !important;
+                position: relative !important;
+                z-index: 999 !important;
+                padding: 5% !important;
+                font-size: 750% !important;
+                line-height: 150px !important;
+            }
         }
+
 
         .topnav {
             position: absolute;
@@ -2103,7 +2118,21 @@
             width: fit-content;
         }
 
+        .bottom {
+            padding-left: 200px;
+            padding-right: 200px;
+        }
+
+
         /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+
+        @media screen and (max-width: 1600px) {
+            .details {
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
+
         @media screen and (max-width: 600px) {
 
             .topnav a,
@@ -2132,7 +2161,14 @@
                 width: min-content;
             }
 
+            .bottom {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
         }
+
+
 
         *::selection {
             background-color: #47BCCC;
@@ -2140,7 +2176,7 @@
         }
 
         a:hover {
-            color: #47BCCC !important;
+            color: #47BCCC;
         }
 
         .video-wrap.style-3 .swiper-slide:after {
@@ -2154,6 +2190,10 @@
             box-shadow: 0px 20px 70px 126px #000000;
         }
 
+        .watch-now:hover {
+            color: red !important;
+        }
+
         /* EOS */
     </style>
 
@@ -2162,8 +2202,12 @@
 <body id="body"
     class="home page-template page-template-elementor_header_footer page page-id-43 elementor-default elementor-template-full-width elementor-kit-72 elementor-page elementor-page-43">
 
+    <center>
 
-    <img src="img/logo/ieee-logo.png" alt="" style="z-index: 999; position: absolute; max-width: 100px; margin: 30px;">
+        <img src="img/logo/ieee-logo.png" alt=""
+            style="z-index: 999; position: absolute; max-width: 100px; margin: 30px;">
+    </center>
+
 
     <div id="main-wrapper" class="main-wrapper clearfix">
 
@@ -2227,24 +2271,26 @@
                                                             </h1>
                                                         </center>
 
-                                                        <div class="inner-img-video">
+                                                        <div class="inner-img-video details">
 
 
                                                             <div class="tag-wrapper meta-top">
                                                                 <a class="headerVideoLink" href="#video1"
-                                                                    style="background-color: #47BCCC;" target="_blank"
-                                                                    class="popup-modal">
-                                                                    watch now ();
+                                                                    style="background-color: #47BCCC; border-radius: 0;"
+                                                                    target="_blank" class="popup-modal watch-now">
+                                                                    watch_now ();
                                                                 </a>
                                                             </div>
 
                                                             <h1 class="video-title">
-                                                                > CodeSolveur Session 01
+                                                                > codeSolveur Session 1.1
                                                             </h1>
 
                                                             <div class="excerpt-video"
                                                                 style="color:black; background-color: white; width:fit-content">
-                                                                - A java Workshop</div>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a java
+                                                                Workshop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            </div>
 
                                                             <div class="author-wrapper-vid">
                                                                 <figure class="author-ava">
@@ -2275,24 +2321,26 @@
                                                             </h1>
                                                         </center>
 
-                                                        <div class="inner-img-video">
+                                                        <div class="inner-img-video details">
 
 
                                                             <div class="tag-wrapper meta-top">
                                                                 <a class="headerVideoLink" href="#video2"
-                                                                    style="background-color: #47BCCC;" target="_blank"
-                                                                    class="popup-modal">
-                                                                    watch now ();
+                                                                    style="background-color: #47BCCC; border-radius: 0;"
+                                                                    target="_blank" class="popup-modal">
+                                                                    watch_now ();
                                                                 </a>
                                                             </div>
 
                                                             <h1 class="video-title">
-                                                                > CodeSolveur Session 02
+                                                                > codeSolveur Session 1.2
                                                             </h1>
 
                                                             <div class="excerpt-video"
                                                                 style="color:black; background-color: white; width:fit-content">
-                                                                - A java Workshop</div>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a java
+                                                                Workshop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            </div>
 
                                                             <div class="author-wrapper-vid">
                                                                 <figure class="author-ava">
@@ -2323,33 +2371,61 @@
                                                         </center>
 
 
-                                                        <div class="inner-img-video">
+                                                        <div class="inner-img-video details">
 
 
                                                             <div class="tag-wrapper meta-top">
                                                                 <a class="headerVideoLink" href="#video3"
-                                                                    style="background-color: #47BCCC;" target="_blank"
-                                                                    class="popup-modal">
-                                                                    watch now ();
+                                                                    style="background-color: #47BCCC; border-radius: 0;"
+                                                                    target="_blank" class="popup-modal">
+                                                                    watch_now ();
                                                                 </a>
                                                             </div>
 
                                                             <h1 class="video-title">
-                                                                > CodeSolveur Session 03
+                                                                > codeSolveur Session 2
                                                             </h1>
 
                                                             <div class="excerpt-video"
                                                                 style="color:black; background-color: white; width:fit-content">
-                                                                - A java Workshop</div>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a
+                                                                java
+                                                                Workshop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            </div>
 
                                                             <div class="author-wrapper-vid">
                                                                 <figure class="author-ava">
                                                                     <a href="speaker-codebreakers.html">
-                                                                        <img src="img/speakers/Deepana-Ishtaweera.jpeg"
-                                                                            alt="Jimmy Rilley" data-no-retina></a>
+
+                                                                        <div class="grid grid-cols-3 gap-1">
+
+                                                                            <div class="item col-start-1 ">
+
+                                                                                <img src="img/speakers/Deepana-Ishtaweera.jpeg"
+                                                                                    alt="Jimmy Rilley" data-no-retina>
+
+                                                                            </div>
+
+                                                                            <div class="item col-start-2 ">
+
+                                                                                <img src="img/speakers/Budvin.jpeg"
+                                                                                    alt="Jimmy Rilley" data-no-retina>
+
+                                                                            </div>
+
+                                                                            <div class="item col-start-3 ">
+
+                                                                                <img src="img/speakers/Sunera.jpeg"
+                                                                                    alt="Jimmy Rilley" data-no-retina>
+
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </a>
                                                                 </figure>
                                                                 <span class="vcard"><a href="speaker-codebreakers.html">
-                                                                        Code breakers</a></span>
+                                                                        CodeBreakers</a></span>
                                                             </div>
 
                                                         </div>
@@ -2371,89 +2447,43 @@
                                                         </center>
 
 
-                                                        <div class="inner-img-video">
+                                                        <div class="inner-img-video details">
 
 
                                                             <div class="tag-wrapper meta-top">
                                                                 <a class="headerVideoLink" href="#video4"
-                                                                    style="background-color: #47BCCC;" target="_blank"
-                                                                    class="popup-modal">
-                                                                    watch now ();
+                                                                    style="background-color: #47BCCC; border-radius: 0; border-radius: 0;"
+                                                                    target="_blank" class="popup-modal">
+                                                                    watch_now ();
                                                                 </a>
                                                             </div>
 
                                                             <h1 class="video-title">
-                                                                > CodeSolveur Session 04
+                                                                > codeSolveur Session 3
                                                             </h1>
 
                                                             <div class="excerpt-video"
                                                                 style="color:black; background-color: white; width:fit-content">
-                                                                - A java Workshop</div>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a
+                                                                java
+                                                                Workshop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            </div>
 
                                                             <div class="author-wrapper-vid">
                                                                 <figure class="author-ava">
                                                                     <a href="speaker-Nagalekha.html">
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp2-1-150x150.jpg"
+                                                                        <img src="img/speakers/Nagalekha.jpeg"
                                                                             alt="Jimmy Rilley" data-no-retina></a>
                                                                 </figure>
                                                                 <span class="vcard"><a href="speaker-Nagalekha.html">
-                                                                        Ms. Nagalekha and Mr. Ketan K</a></span>
+                                                                        Ms. Nagalekha</a></span>
                                                             </div>
 
                                                         </div>
 
                                                         <div class="overlay-hero"></div>
                                                     </div>
-                                                    <div class="video-item swiper-slide"
-                                                        style="background-image: url(img/slideshow/5.png); background-size: cover;  min-height: 100vh;">
 
-                                                        <!-- <video autoplay muted loop style="height: 150%; width: 150%; ">
-                                                <source src="video.mp4" type="video/mp4">
-                                            </video> -->
-
-                                                        <center>
-                                                            <h1 id="welcome" class="welcome"
-                                                                style="color: #47BCCC; border: 2px solid white; padding:0 !important; width: fit-content; text-align:center">
-                                                                codeSolveur Video vault
-                                                            </h1>
-                                                        </center>
-
-
-                                                        <div class="inner-img-video">
-
-
-                                                            <div class="tag-wrapper meta-top">
-                                                                <a class="headerVideoLink" href="#video5"
-                                                                    style="background-color: #47BCCC;" target="_blank"
-                                                                    class="popup-modal">
-                                                                    watch now ();
-                                                                </a>
-                                                            </div>
-
-                                                            <h1 class="video-title">
-                                                                > CodeSolveur Session 05
-                                                            </h1>
-
-                                                            <div class="excerpt-video"
-                                                                style="color:black; background-color: white; width:fit-content">
-                                                                - A java Workshop</div>
-
-                                                            <div class="author-wrapper-vid">
-                                                                <figure class="author-ava">
-                                                                    <a
-                                                                        href="https://blutube.themesawesome.com/author/creator2/">
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp2-1-150x150.jpg"
-                                                                            alt="Jimmy Rilley" data-no-retina></a>
-                                                                </figure>
-                                                                <span class="vcard"><a
-                                                                        href="https://blutube.themesawesome.com/author/creator2/">
-                                                                        Jimmy Rilley</a></span>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <div class="overlay-hero"></div>
-                                                    </div>
 
                                                 </div>
 
@@ -2524,7 +2554,7 @@
                                                     <div class="elementor-widget-container">
                                                         <h2 class="elementor-heading-title elementor-size-default black2"
                                                             style="background: white; color: black;">
-                                                            CodeSolveur videos <span class="black"
+                                                            codeSolveur videos <span class="black"
                                                                 style="background:black">&nbsp;</span>&nbsp;</h2>
                                                     </div>
                                                 </div>
@@ -2532,7 +2562,7 @@
                                                     data-id="e456458" data-element_type="widget"
                                                     data-widget_type="spacer.default">
                                                     <div class="elementor-widget-container"
-                                                        style="background-color: #47BCCC;">
+                                                        style="background-color: #47BCCC; border-radius: 0;">
                                                         <div class="elementor-spacer">
                                                             <div class="elementor-spacer-inner"></div>
                                                         </div>
@@ -2672,8 +2702,12 @@
                                                                     <div class="post-author clearfix">
                                                                         <img src="img/speakers/Deepana-Ishtaweera.jpeg"
                                                                             data-no-retina alt="Jimmy Rilley">
-                                                                        <span><a href="speaker-codebreakers.html">Code
-                                                                                breakers</a></span>
+                                                                        <img src="img/speakers/Budvin.jpeg"
+                                                                            data-no-retina alt="Jimmy Rilley">
+                                                                        <img src="img/speakers/Sunera.jpeg"
+                                                                            data-no-retina alt="Jimmy Rilley">
+                                                                        <span><a
+                                                                                href="speaker-codebreakers.html">CodeBreakers</a></span>
                                                                     </div>
                                                                     <div class="post-title">
                                                                         <h4> <a class="headerVideoLink" href="#video1"
@@ -2716,10 +2750,10 @@
                                                                 </div>
                                                                 <div class="post-content">
                                                                     <div class="post-author clearfix">
-                                                                        <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/pp2-1-150x150.jpg"
+                                                                        <img src="img/speakers/Nagalekha.jpeg"
                                                                             data-no-retina alt="Jimmy Rilley">
                                                                         <span><a href="speaker-Nagalekha.html">Ms.
-                                                                                Nagalekha Ramesh and Mr.Ketan
+                                                                                Nagalekha Ramesh
                                                                                 K</a></span>
                                                                     </div>
                                                                     <div class="post-title">
@@ -2818,7 +2852,7 @@
                                                     <div class="elementor-widget-container">
                                                         <h2 class="elementor-heading-title elementor-size-default black2"
                                                             style="background: white; color: black;">
-                                                            CodeSolveur playlists<span class="black"
+                                                            codeSolveur playlists<span class="black"
                                                                 style="background:black">&nbsp;</span>&nbsp;</h2>
                                                     </div>
                                                 </div>
@@ -2826,7 +2860,7 @@
                                                     data-id="e456458" data-element_type="widget"
                                                     data-widget_type="spacer.default">
                                                     <div class="elementor-widget-container"
-                                                        style="background-color: #47BCCC;">
+                                                        style="background-color: #47BCCC; border-radius: 0;">
                                                         <div class="elementor-spacer">
                                                             <div class="elementor-spacer-inner"></div>
                                                         </div>
@@ -3066,9 +3100,10 @@
             <div class="footer-wrapper">
                 <div class="footer-top">
                     <div class="pad-container clearfix">
-                        <div class="footer-widget-areas grid grid-cols-12">
 
-                            <div class="footer-widget item col-span-6 sm:col-span-12">
+                        <div class="footer-widget-areas grid grid-cols-6 gap-4">
+
+                            <div class="footer-widget item col-start-2 col-span-4">
                                 <div id="custom_html-2" class="widget_text widget-footer widget_custom_html">
                                     <div class="textwidget custom-html-widget">
                                         <div class="title">
@@ -3092,7 +3127,7 @@
                                 </div>
                             </div>
 
-                            <div class="footer-widget item col-span-6 sm:col-span-12">
+                            <!-- <div class="footer-widget item col-span-6 sm:col-span-12">
                                 <div id="custom_html-2" class="widget_text widget-footer widget_custom_html">
                                     <div class="textwidget custom-html-widget">
                                         <div class="title">
@@ -3110,7 +3145,7 @@
 
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <!-- <div class="footer-widget item col-span-4 sm:col-span-12">
                                 <div id="blutube_video_creator-widget-2"
@@ -3189,9 +3224,11 @@
                     </div>
                 </div>
                 <div class="footer-bottom" style="padding:0">
+
                     <div class="footer-bot-content" style="padding: 40px; background-color: black;">
 
-                        <div class="footer-logo" style="display: inline; flex: 100%; max-width: 100%;">
+                        <div class="footer-logo bottom"
+                            style="display: inline; flex: 100%; max-width: 100%; justify-content: center;">
                             <div class="foot-logo logo-image">
                                 <img src="img/logo/ieee-logo.png" alt="Blutube"
                                     style="display: inline; max-width:150px;" />
@@ -3204,14 +3241,15 @@
                             <div class="copyright">process finished with exit code 0</div>
                         </div>
 
-                        <div class="footer-social" style="flex: 100%; max-width: 100%; ">
+                        <div class="footer-social bottom" style="flex: 100%; max-width: 100%; ">
                             <ul>
                                 <li><a href="https://www.facebook.com/ieee.kdu"><i class="fab fa-facebook-f"></i></a>
                                 </li>
                                 <li><a href="https://www.instagram.com/ieee_student_branch_kdu/"><i
                                             class="fab fa-instagram"></i></a></li>
-                                <li><a href="https://blutube.themesawesome.com/"><i class="fab fa-twitch"></i></a></li>
-                                <li><a href="https://blutube.themesawesome.com/"><i class="fab fa-vimeo"></i></a></li>
+                                <li><a
+                                        href="https://www.linkedin.com/company/ieee-student-branch-kotelawala-defence-university/"><i
+                                            class="fa fa-linkedin-square"></i></a></li>
                             </ul>
                         </div>
 
