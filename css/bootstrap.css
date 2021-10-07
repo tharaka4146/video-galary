@@ -82,7 +82,11 @@
 }
 
 *, *::before, *::after {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+}
+
+.image-author::after, .image-author::after {
+    box-sizing: content-box !important;
 }
 
 html {

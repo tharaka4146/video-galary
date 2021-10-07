@@ -1995,17 +1995,58 @@
             margin: 0 auto;
         }
 
+        .profile-image {
+            margin: 70px !important;
+        }
+
         @media screen and (min-width: 600px) {
 
             .headerPopup {
                 width: 50%;
                 margin: 0 auto;
             }
+
+            .black {
+                opacity: 1;
+            }
+
+            .black2 {
+                width: fit-content;
+            }
+
+            .bottom {
+                padding-left: 200px;
+                padding-right: 200px;
+            }
+
+            .profile-image {
+                margin: 50px !important;
+            }
+        }
+
+
+        @media screen and (max-width: 600px) {
+
+            .black {
+                opacity: 0;
+                width: min-content;
+            }
+
+            .black2 {
+                width: min-content;
+            }
+
+            .bottom {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
         }
 
         a:hover {
             color: white;
         }
+
+
 
         /* EOS */
     </style>
@@ -2030,58 +2071,41 @@
         }
     </style>
 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&display=swap');
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        a,
+        p,
+        span,
+        div {
+            font-family: 'JetBrains Mono', monospace !important;
+        }
+    </style>
+
 
 </head>
 
-<body id="body" class="archive author author-creator2 author-101255 elementor-default elementor-kit-72">
+<body id="body" class="archive author author-creator2 author-101255 elementor-default elementor-kit-72"
+    style="background-color: black;">
 
 
     <div id="main-wrapper" class="main-wrapper clearfix">
         <!-- Header
 	============================================= -->
-        <header class="header header-custom clearfix">
+        <header class="header header-custom clearfix" style=" padding-bottom: 0!important;">
             <div class="header-left text-left clearfix">
                 <div class="head-item logo-image logo-head">
-                    <a href="https://blutube.themesawesome.com/">
-                        <img src="img/logo/devzone-logo.png" alt="Blutube" />
+                    <a href="index.html">
+                        <img src="img/logo/ieee-logo.png" alt=""
+                            style="z-index: 999; position: relative; max-width: 100px; margin: 30px; margin-bottom: 0;">
                     </a>
                 </div>
-
-                <input id="main-menu-state" type="checkbox" />
-
-                <label class="main-menu-btn sub-menu-triger" for="main-menu-state">
-                    <span class="main-menu-btn-icon"></span>
-                </label>
-
-                <nav class="menu main-menu head-item">
-                    <div class="menu-mobile-add">
-                        <a href="https://blutube.themesawesome.com/myaccount">Upload</a>
-                    </div>
-                    <ul id="menu-menu-main-header" class="sm sm-clean">
-
-                        <li id="menu-item-576"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-576"><a
-                                href="https://blutube.themesawesome.com/blog/">Home</a></li>
-
-
-                        <li id="menu-item-576"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-576"><a
-                                href="playlists.html">Playlists</a></li>
-
-                        <li id="menu-item-1542"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1542"><a
-                                href="contact-us.html">Contact
-                                Us</a>
-                        </li>
-
-                        <li id="menu-item-1542"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1542"><a
-                                href="about-us.html">About
-                                Us</a>
-                        </li>
-                    </ul>
-
-                </nav>
             </div>
             <!-- <div class="header-right text-right clearfix ">
             <div class="header-info-wrapper">
@@ -2105,22 +2129,26 @@
         </header>
 
 
-        <div id="content" class="single-category-page author-page">
+        <div id="content" class="single-category-page author-page" style="padding:0">
             <div class="container">
                 <div class="author-profile clearfix">
                     <div class="image-author">
-                        <img class="author" src="img/speakers/Indrajith-Ekanayake.jpg" alt="Jimmy Rilley" data-no-retina
-                            style="margin: 50px; width: 200px; height: 200%;" />
+                        <img class="author profile-image" src="img/speakers/Nagalekha.jpeg" alt="Jimmy Rilley"
+                            data-no-retina
+                            style="margin: 50px; width: 200px; height: 200%; border: 5px solid #47BCCC;" />
                     </div>
                     <div class="about-category author">
-                        <h1>Mr. Indrajith Ekanayake</h1>
-                        <p>Mr. ndrajith Ekanayake, the IEEE Xtreme SL Section Lead, has a solid track record of
-                            leadership,
-                            having launched and led numerous successful IEEE initiatives. He is currently employed as a
-                            lecturer at the Open University of Sri Lanka. He is reading his master's degree in Big Data
-                            Analytics and he holds a bachelor's degree in Computer Software Engineering from the
-                            University of Plymouth. He is a self-motivated individual with excellent social skills who
-                            is actively involved in voluntary activities.</p>
+                        <h1 style="border-left: 4px solid #47BCCC; background: white; color: black; ">Ms. Nagalekha
+                            Ramesh <span class="black" style="background:black">&nbsp;</span>&nbsp;</h1>
+                        <p>Nagalekha is currently employed at Dotgo, India, a global leader in RCS and other business
+                            messaging solutions, as an associative software engineer. She is a graduate of computer
+                            science and engineering from Visvesvaraya Technological University who has volunteered at
+                            IEEE throughout her life journey. She was the section lead at IEEE Xtreme and won the
+                            outstanding student volunteer award from WIE IEEE Bangalore section. Moreover, she was a Web
+                            developer at IEEE Bangalore section and IEEE cyber physical systems. Being experienced in
+                            several paths such as graphic designing and electronic communication and information
+                            management, she is an outstanding personality who has who won many awards throughout her
+                            IEEE journey.</p>
                         <div class="author-social">
                             <ul class="social-profiles">
                                 <li class="instagram">
@@ -2146,10 +2174,9 @@
                 <!-- BLOG START
 			============================================= -->
                 <div class="blog clearfix">
-
                     <section
                         class="elementor-section elementor-top-section elementor-element elementor-element-e6f7a1c elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-                        data-id="e6f7a1c" data-element_type="section"
+                        style="padding-bottom:0" data-id="e6f7a1c" data-element_type="section"
                         data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                         <div class="elementor-container elementor-column-gap-no">
                             <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-75a408e"
@@ -2162,11 +2189,11 @@
                                             <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-24ec3f8"
                                                 data-id="24ec3f8" data-element_type="column">
                                                 <div class="elementor-widget-wrap elementor-element-populated">
-
                                                     <div class="elementor-element elementor-element-e456458 elementor-widget__width-initial elementor-widget elementor-widget-spacer"
                                                         data-id="e456458" data-element_type="widget"
                                                         data-widget_type="spacer.default">
-                                                        <div class="elementor-widget-container">
+                                                        <div class="elementor-widget-container"
+                                                            style="background-color: #47BCCC; border-radius: 0;">
                                                             <div class="elementor-spacer">
                                                                 <div class="elementor-spacer-inner"></div>
                                                             </div>
@@ -2186,120 +2213,105 @@
                                                     <div class="swiper-container">
                                                         <div class="swiper-wrapper">
 
-                                                            <div style="width: 410.75px; margin-right: 20px;">
-
-                                                                <div class="video-item swiper-slide">
-                                                                    <div class="post-wrap">
-                                                                        <div class="post-thumb">
-                                                                            <a class="headerVideoLink" href="#video1"
-                                                                                target="_blank" class="popup-modal">
-                                                                                <div class="play-button-hover">
-                                                                                    <i
-                                                                                        class="fa fa-play play-button"></i>
-                                                                                </div>
-                                                                                <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos9-535x355.jpg"
-                                                                                    alt="Produce or cost. Into had because"
-                                                                                    data-no-retina
-                                                                                    style="height: auto;" />
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="post-content">
-
-                                                                            <div class="post-title">
-
-                                                                                <h4> <a class="headerVideoLink"
-                                                                                        href="#video1" target="_blank"
-                                                                                        class="popup-modal">Produce
-                                                                                        or cost. Into had because</a>
-                                                                                </h4>
-                                                                                <span class="views">222 Views</span>
-                                                                                <span class="hours">5 months ago</span>
-
+                                                            <div class="video-item swiper-slide">
+                                                                <div class="post-wrap">
+                                                                    <div class="post-thumb">
+                                                                        <a class="headerVideoLink" href="#video1"
+                                                                            target="_blank" class="popup-modal">
+                                                                            <div class="play-button-hover">
+                                                                                <i class="fa fa-play play-button"></i>
                                                                             </div>
+                                                                            <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos9-535x355.jpg"
+                                                                                alt="Produce or cost. Into had because"
+                                                                                data-no-retina />
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="post-content">
+
+                                                                        <div class="post-title">
+                                                                            <h4> <a class="headerVideoLink"
+                                                                                    href="#video1" target="_blank"
+                                                                                    class="popup-modal">
+                                                                                    produce
+                                                                                    or cost. Into had because</a></h4>
+                                                                            <span class="views">222 Views</span>
+                                                                            <span class="hours">5 months ago</span>
                                                                         </div>
                                                                     </div>
+                                                                </div>
 
-                                                                    <!-- <a class="headerVideoLink" href="#video1" target="_blank"
+                                                                <!-- <a class="headerVideoLink" href="#video1" target="_blank"
                                                                 class="popup-modal">
                                                                 Watch Our Video
-                                                                </a> -->
+                                                            </a> -->
 
-                                                                    <div id="video1"
-                                                                        class="mfp-hide embed-responsive embed-responsive-21by9 headerPopup">
+                                                                <div id="video1"
+                                                                    class="mfp-hide embed-responsive embed-responsive-21by9 headerPopup">
 
-                                                                        <!-- <iframe width="560" height="315"
+                                                                    <!-- <iframe width="560" height="315"
                                                                     src="https://www.youtube.com/embed/IfrfJn_-24g"
                                                                     title="YouTube video player" frameborder="0"
                                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                                                     allowfullscreen></iframe> -->
 
-                                                                        <iframe width="560" height="315"
-                                                                            src="https://www.youtube.com/embed/videoseries?list=PLIV1P6OrbqH_E9FAzNtyYMU7oGBjXXACJ"
-                                                                            title="YouTube video player" frameborder="0"
-                                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                                            allowfullscreen></iframe>
+                                                                    <iframe width="560" height="315"
+                                                                        src="https://www.youtube.com/embed/ws0QlpV3OqQ"
+                                                                        title="YouTube video player" frameborder="0"
+                                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                                        allowfullscreen></iframe>
 
-                                                                    </div>
                                                                 </div>
                                                             </div>
 
-                                                            <div style="width: 410.75px;  margin-right: 20px;">
-
-                                                                <div class="video-item swiper-slide">
-                                                                    <div class="post-wrap">
-                                                                        <div class="post-thumb">
-                                                                            <a class="headerVideoLink" href="#video1"
-                                                                                target="_blank" class="popup-modal">
-                                                                                <div class="play-button-hover">
-                                                                                    <i
-                                                                                        class="fa fa-play play-button"></i>
-                                                                                </div>
-                                                                                <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos9-535x355.jpg"
-                                                                                    alt="Produce or cost. Into had because"
-                                                                                    data-no-retina
-                                                                                    style="height: auto;" />
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="post-content">
-
-                                                                            <div class="post-title">
-
-                                                                                <h4> <a class="headerVideoLink"
-                                                                                        href="#video1" target="_blank"
-                                                                                        class="popup-modal">Produce
-                                                                                        or cost. Into had because</a>
-                                                                                </h4>
-                                                                                <span class="views">222 Views</span>
-                                                                                <span class="hours">5 months ago</span>
-
+                                                            <div class="video-item swiper-slide">
+                                                                <div class="post-wrap">
+                                                                    <div class="post-thumb">
+                                                                        <a class="headerVideoLink" href="#video1"
+                                                                            target="_blank" class="popup-modal">
+                                                                            <div class="play-button-hover">
+                                                                                <i class="fa fa-play play-button"></i>
                                                                             </div>
+                                                                            <img src="https://blutube.themesawesome.com/wp-content/uploads/sites/162/2021/04/autos9-535x355.jpg"
+                                                                                alt="Produce or cost. Into had because"
+                                                                                data-no-retina />
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="post-content">
+
+                                                                        <div class="post-title">
+                                                                            <h4> <a class="headerVideoLink"
+                                                                                    href="#video1" target="_blank"
+                                                                                    class="popup-modal">
+                                                                                    produce
+                                                                                    or cost. Into had because</a></h4>
+                                                                            <span class="views">222 Views</span>
+                                                                            <span class="hours">5 months ago</span>
                                                                         </div>
                                                                     </div>
+                                                                </div>
 
-                                                                    <!-- <a class="headerVideoLink" href="#video1" target="_blank"
+                                                                <!-- <a class="headerVideoLink" href="#video1" target="_blank"
                                                                 class="popup-modal">
                                                                 Watch Our Video
-                                                                </a> -->
+                                                            </a> -->
 
-                                                                    <div id="video1"
-                                                                        class="mfp-hide embed-responsive embed-responsive-21by9 headerPopup">
+                                                                <div id="video1"
+                                                                    class="mfp-hide embed-responsive embed-responsive-21by9 headerPopup">
 
-                                                                        <!-- <iframe width="560" height="315"
+                                                                    <!-- <iframe width="560" height="315"
                                                                     src="https://www.youtube.com/embed/IfrfJn_-24g"
                                                                     title="YouTube video player" frameborder="0"
                                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                                                     allowfullscreen></iframe> -->
 
-                                                                        <iframe width="560" height="315"
-                                                                            src="https://www.youtube.com/embed/videoseries?list=PLIV1P6OrbqH_E9FAzNtyYMU7oGBjXXACJ"
-                                                                            title="YouTube video player" frameborder="0"
-                                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                                            allowfullscreen></iframe>
+                                                                    <iframe width="560" height="315"
+                                                                        src="https://www.youtube.com/embed/ws0QlpV3OqQ"
+                                                                        title="YouTube video player" frameborder="0"
+                                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                                        allowfullscreen></iframe>
 
-                                                                    </div>
                                                                 </div>
                                                             </div>
-
 
                                                         </div>
                                                     </div>
@@ -2361,28 +2373,37 @@
         <footer id="footer" class="footer clearfix">
             <div class="footer-wrapper">
 
-                <div class="footer-bottom">
-                    <div class="footer-bot-content">
-                        <div class="footer-logo">
+                <div class="footer-bottom" style="padding:0">
+
+                    <div class="footer-bot-content" style="padding: 40px; background-color: black;">
+
+                        <div class="footer-logo bottom"
+                            style="display: inline; flex: 100%; max-width: 100%; justify-content: center;">
                             <div class="foot-logo logo-image">
-                                <a href="https://blutube.themesawesome.com/">
-                                    <img src="img/logo/devzone-logo.png" alt="Blutube" />
-                                </a>
+                                <img src="img/logo/ieee-logo.png" alt="Blutube"
+                                    style="display: inline; max-width:150px;" />
+                                <img src="img/logo/wie-logo.png" alt="Blutube"
+                                    style="display: inline; max-width:150px;" />
                             </div>
                         </div>
-                        <div class="copyright-wrap">
-                            <div class="copyright">
-                                Copyright 2021 Blutube. Built by Themes Awesome. </div>
+
+                        <div class="copyright-wrap"
+                            style="display: inline; flex: 100%; max-width: 100%; justify-content: center;">
+                            <div class="copyright">process finished with exit code 0</div>
                         </div>
-                        <div class="footer-social">
+
+                        <div class="footer-social bottom" style="flex: 100%; max-width: 100%; ">
                             <ul>
-                                <li><a href="https://blutube.themesawesome.com/"><i class="fab fa-facebook-f"></i></a>
+                                <li><a href="https://www.facebook.com/ieee.kdu"><i class="fab fa-facebook-f"></i></a>
                                 </li>
-                                <li><a href="https://blutube.themesawesome.com/"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="https://blutube.themesawesome.com/"><i class="fab fa-twitch"></i></a></li>
-                                <li><a href="https://blutube.themesawesome.com/"><i class="fab fa-vimeo"></i></a></li>
+                                <li><a href="https://www.instagram.com/ieee_student_branch_kdu/"><i
+                                            class="fab fa-instagram"></i></a></li>
+                                <li><a
+                                        href="https://www.linkedin.com/company/ieee-student-branch-kotelawala-defence-university/"><i
+                                            class="fa fa-linkedin-square"></i></a></li>
                             </ul>
                         </div>
+
                     </div>
                 </div>
             </div>
